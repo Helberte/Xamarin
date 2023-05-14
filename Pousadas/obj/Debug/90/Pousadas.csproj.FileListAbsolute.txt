@@ -1,0 +1,4 @@
+C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\90\build.props
+C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\90\adb.props
+C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\90\Pousadas.csproj.AssemblyReference.cache
