@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AMÉRICA HOTEL</string>
+	<string name="action_settings">Settings</string>
+	<string name="description_bt_entrar">Entrar</string>
+</resources>

@@ -307,3 +307,24 @@ C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\130\stamp\_ConvertResourcesCases.stamp
 C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\PROJETOS - XAMARIN\Pousadas\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\MonoAndroid,Version=v13.0.AssemblyAttributes.cs
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\build.props
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\adb.props
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\Pousadas.csproj.AssemblyReference.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\stamp\_BuildLibraryImportsCache.stamp
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\res.flag
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\38\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\43\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\49\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\56\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\57\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\60\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\65\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\67\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\70\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\71\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\72\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\73\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\lp\74\jl\files.cache
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\Pousadas.dll
+D:\Helberte\Xamarin\Pousadas\obj\Debug\130\Pousadas.pdb
