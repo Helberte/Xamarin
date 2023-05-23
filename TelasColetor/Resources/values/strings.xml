@@ -6,4 +6,6 @@
 	<string name="name_user">64429-HELBERTE</string>
 	<string name="name_filial">MTZ | 01</string>
 	<string name="title_body">Separação</string>
+	<string name="name_opcao_menu">Separação Paletizada</string>
+	<string name="name_opcao_menu_separacao_fracionada">Separação Fracionada</string>
 </resources>
