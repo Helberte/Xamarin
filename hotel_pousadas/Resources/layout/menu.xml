@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#ccc"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#555"
+            android:text="@string/label_nome_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelNomeUsuario"/>
+        <TextView
+            android:textColor="#555"
+            android:text="@string/nome_usuario"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNomeUsuario"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/label_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/edNomePessoa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:text="@string/label_idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edIdadePessoa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:text="@string/label_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/edEmailPessoa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="@string/text_button_cadastrar"
+            android:layout_width="120dp"
+            android:id="@+id/btCadastrar"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="@string/text_button_listar"
+                android:layout_width="wrap_content"            
+                android:id="@+id/btListar"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        
+
+    </LinearLayout>   
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/txtCaminhoBanco"
+        android:layout_height="wrap_content"/>
+
+
+<!--Curso-->
+
+
+
+
+</LinearLayout>
+

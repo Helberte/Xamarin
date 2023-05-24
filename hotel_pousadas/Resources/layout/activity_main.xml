@@ -4,30 +4,33 @@
     android:orientation="vertical"
     android:minWidth="25px"
     android:minHeight="25px"
+    android:padding="35dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linearLayoutMain"
-    android:background="#ffc7c7c7"
-    android:gravity="center">
+    android:background="#26273D">
     
+<!-- ESTUDO SQLITE 
+    https://www.macoratti.net/16/08/xamand_crud1.htm
+    https://www.macoratti.net/16/08/xamand_crud2.htm
+-->
+
     <LinearLayout
         android:orientation="vertical"
+        android:background="@android:color/transparent"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:background="@drawable/shape"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="27dp"
-        android:elevation="3dp"
-        android:id="@+id/linearLayoutLogin"  
-        android:padding="24dp"
-        android:accessibilityHeading="false">
-        <ImageView
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/label_nome_login"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
-            android:layout_height="101.0dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/logo"
-            android:contentDescription="@imagemLogo"
-            android:id="@+id/imgLogo"/>
+            android:layout_height="wrap_content"/>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -36,7 +39,8 @@
             android:background="@drawable/shapeedittext"
             android:id="@+id/linearLayoutUser">
             <ImageView
-                android:layout_width="45dp"
+                android:layout_width="30dp"
+                android:layout_marginLeft="10dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/usuarios"
                 android:contentDescription="@imagemUser"
@@ -44,6 +48,9 @@
             <EditText
                 android:inputType="textPersonName"
                 android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
                 android:layout_height="match_parent"
                 android:id="@+id/edUser"/>
         </LinearLayout>
@@ -55,14 +62,18 @@
             android:layout_marginTop="25dp"
             android:id="@+id/linearLayoutPassword">
             <ImageView
-                android:layout_width="45dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/senha"
                 android:contentDescription="@imagemPassword"
                 android:id="@+id/imgPassword"/>
             <EditText
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
                 android:layout_height="match_parent"
                 android:id="@+id/edPassword"/>
         </LinearLayout>
@@ -75,4 +86,5 @@
             android:id="@+id/btEntrar"/>
 
     </LinearLayout>
+     
 </LinearLayout>

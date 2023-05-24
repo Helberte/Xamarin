@@ -62,9 +62,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conection.cs" />
+    <Compile Include="fonte\listaPessoas.cs" />
+    <Compile Include="fonte\menu.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\DataBaseHelper\DataBase.cs" />
+    <Compile Include="Resources\ListAdapter.cs" />
+    <Compile Include="Resources\Model\Aluno.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Variaveis.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -125,6 +132,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\shapeEditText.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\menu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\lista_pessoas.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

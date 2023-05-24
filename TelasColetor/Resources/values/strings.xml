@@ -8,4 +8,5 @@
 	<string name="title_body">Separação</string>
 	<string name="name_opcao_menu">Separação Paletizada</string>
 	<string name="name_opcao_menu_separacao_fracionada">Separação Fracionada</string>
+	<string name="botao_sair">Sair</string>
 </resources>

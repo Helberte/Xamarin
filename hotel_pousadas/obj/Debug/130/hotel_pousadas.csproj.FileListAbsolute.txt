@@ -577,3 +577,8 @@ D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\android\assets\System.Memory.dl
 D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\android\assets\System.Runtime.CompilerServices.Unsafe.dll
 D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\res\drawable\shape.xml
 D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\res\drawable\shapeedittext.xml
+D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\res\layout\menu.xml
+D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\android\src\crc6472285ac4943a6be1\menu.java
+D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\res\layout\lista_pessoas.xml
+D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\android\src\crc6472285ac4943a6be1\listaPessoas.java
+D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\android\src\crc64a55af4f6b96d7d53\ListAdapter.java

@@ -16,6 +16,7 @@ attr;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\values\attrs.
 background;obj\Debug\130\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Debug\130\res\mipmap-anydpi-v26\ic_launcher_round.xml
 Button;obj\Debug\130\res\layout\activity_main.xml
+Button;obj\Debug\130\res\layout\menu.xml
 cache-path;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\130\res\values\colors.xml
 color;obj\Debug\130\res\values\ic_launcher_background.xml
@@ -30,6 +31,7 @@ corners;obj\Debug\130\res\drawable\shape.xml
 corners;obj\Debug\130\res\drawable\shapeedittext.xml
 declare-styleable;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\values\attrs.xml
 EditText;obj\Debug\130\res\layout\activity_main.xml
+EditText;obj\Debug\130\res\layout\menu.xml
 external-cache-path;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\130\res\mipmap-anydpi-v26\ic_launcher.xml
@@ -40,6 +42,9 @@ item;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\values\styles
 item;obj\Debug\130\res\values\styles.xml
 LinearLayout;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\layout\bottomtablayout.xml
 LinearLayout;obj\Debug\130\res\layout\activity_main.xml
+LinearLayout;obj\Debug\130\res\layout\lista_pessoas.xml
+LinearLayout;obj\Debug\130\res\layout\menu.xml
+ListView;obj\Debug\130\res\layout\lista_pessoas.xml
 paths;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\values\attrs.xml
 resources;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\values\strings.xml
@@ -59,8 +64,12 @@ solid;obj\Debug\130\res\drawable\shapeedittext.xml
 string;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\values\strings.xml
 string;obj\Debug\130\res\values\strings.xml
 stroke;obj\Debug\130\res\drawable\shape.xml
+stroke;obj\Debug\130\res\drawable\shapeedittext.xml
 style;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\values\styles.xml
 style;obj\Debug\130\res\values\styles.xml
+TextView;obj\Debug\130\res\layout\activity_main.xml
+TextView;obj\Debug\130\res\layout\lista_pessoas.xml
+TextView;obj\Debug\130\res\layout\menu.xml
 translate;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\anim\enterfromleft.xml
 translate;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\anim\enterfromright.xml
 translate;D:\Helberte\Xamarin\hotel_pousadas\obj\Debug\130\lp\45\jl\res\anim\exittoleft.xml

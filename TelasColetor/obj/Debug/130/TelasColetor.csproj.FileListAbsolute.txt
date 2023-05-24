@@ -312,3 +312,10 @@ D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\stamp\_ConvertResourcesCases.stam
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\shape.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\icons8_pallet_96.png
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\logo_ig.png
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\profile_user.png
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\icons8_breakable_96_1.png
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\icons8_empty_box_96_3.png
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\values\dimens.xml
