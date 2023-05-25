@@ -16,7 +16,8 @@ namespace hotel_pousadas.fonte
     [Activity(Label = "menu")]
     public class menu : Activity
     {
-        TextView txtNomeUsuario;
+        TextView labelNomeUsuario;
+        TextView labelCargoUsuario;
         TextView edNomePessoa;
         TextView edIdadePessoa;
         TextView edEmailPessoa;
@@ -27,6 +28,8 @@ namespace hotel_pousadas.fonte
         Aluno aluno;
         DataBase dataBase;
 
+        ImageView image_bt_movimentacoes;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -34,24 +37,29 @@ namespace hotel_pousadas.fonte
             // linca o fonte com a tela que este fonte irá fazer funcionar
             SetContentView(Resource.Layout.menu);
 
+            labelNomeUsuario  = FindViewById<TextView>(Resource.Id.labelNomeUsuario);
+            labelCargoUsuario = FindViewById<TextView>(Resource.Id.labelCargoUsuario);
 
-            txtNomeUsuario = FindViewById<TextView>(Resource.Id.txtNomeUsuario);
-            txtNomeUsuario.Text = Intent.GetStringExtra("nome");
+            labelNomeUsuario.Text = "Usuário: " + Intent.GetStringExtra("nome");
 
-            edNomePessoa  = FindViewById<TextView>(Resource.Id.edNomePessoa);
-            edIdadePessoa = FindViewById<TextView>(Resource.Id.edIdadePessoa);
-            edEmailPessoa = FindViewById<TextView>(Resource.Id.edEmailPessoa);
+            edNomePessoa    = FindViewById<TextView>(Resource.Id.edNomePessoa);
+            edIdadePessoa   = FindViewById<TextView>(Resource.Id.edIdadePessoa);
+            edEmailPessoa   = FindViewById<TextView>(Resource.Id.edEmailPessoa);
             txtCaminhoBanco = FindViewById<TextView>(Resource.Id.txtCaminhoBanco);
 
 
-            btCadastrar = FindViewById<Button>(Resource.Id.btCadastrar);
+            btCadastrar     = FindViewById<Button>(Resource.Id.btCadastrar);
             btListarPessoas = FindViewById<Button>(Resource.Id.btListar);
+
+            image_bt_movimentacoes = FindViewById<ImageView>(Resource.Id.image_bt_movimentacoes);
+
 
             btCadastrar.Click += BtCadastrar_Click;
             btListarPessoas.Click += BtListarPessoas_Click;
+            image_bt_movimentacoes.Click += Layout_bt_movimentacoes_Click;
 
             // define a cor de um texto
-            txtNomeUsuario.SetTextColor(Android.Graphics.Color.Black);
+            //txtNomeUsuario.SetTextColor(Android.Graphics.Color.Black);
 
             dataBase = new DataBase();
 
@@ -61,6 +69,11 @@ namespace hotel_pousadas.fonte
             txtCaminhoBanco.Text = Variaveis.caminho_banco;
 
             aluno = new Aluno();
+        }
+
+        private void Layout_bt_movimentacoes_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(movimentacoes));
         }
 
         private void BtListarPessoas_Click(object sender, EventArgs e)

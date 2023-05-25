@@ -2,7 +2,7 @@
     <string name="app_name">AMÉRICA HOTEL</string>
 	<string name="action_settings">Settings</string>
 	<string name="description_bt_entrar">Entrar</string>
-	<string name="nome_usuario">Helberte</string>
+	<string name="nome_usuario">Cargo: </string>
 	<string name="label_nome_usuario">Usuário: </string>
 	<string name="label_nome">Nome</string>
 	<string name="label_idade">Idade</string>
@@ -11,4 +11,15 @@
 	<string name="text_button_listar">Listar Existentes</string>
 	<string name="text_caminho_banco">Caminho Banco</string>
 	<string name="label_nome_login">Login</string>
+	<string name="text_checkbox_lembre_de_min">Lembre-se de mim</string>
+	<string name="label_esqueci_senha">Esqueci a senha</string>
+	<string name="descricao_imagem_usuario">Icone de um usuario</string>
+	<string name="descricao_imagem_movimentacao">Icone de um dinheiro</string>
+	<string name="descricao_imagem_gastos">Icone gastos</string>
+	<string name="descricao_imagem_reservas">Icone reservas</string>
+	<string name="descricao_imagem_checkin">Icone checkin</string>
+	<string name="label_entradas">Entradas: </string>
+	<string name="label_saidas">Saídas: </string>
+	<string name="label_total">Total: </string>
+	<string name="text_listar_movimentacoes">Listar todos</string>
 </resources>

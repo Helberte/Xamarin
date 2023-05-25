@@ -10,6 +10,9 @@ hotel_pousadas.fonte.listaPessoas;crc6472285ac4943a6be1.listaPessoas
 hotel_pousadas.fonte.menu, hotel_pousadas;crc6472285ac4943a6be1.menu
 hotel_pousadas.fonte.menu;crc6472285ac4943a6be1.menu
 hotel_pousadas.fonte.menu;crc6472285ac4943a6be1.menu
+hotel_pousadas.fonte.movimentacoes, hotel_pousadas;crc6472285ac4943a6be1.movimentacoes
+hotel_pousadas.fonte.movimentacoes;crc6472285ac4943a6be1.movimentacoes
+hotel_pousadas.fonte.movimentacoes;crc6472285ac4943a6be1.movimentacoes
 AndroidX.Activity.IOnBackPressedDispatcherOwner, Xamarin.AndroidX.Activity;androidx.activity.OnBackPressedDispatcherOwner
 AndroidX.Activity.IOnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner
 androidx.activity.OnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner

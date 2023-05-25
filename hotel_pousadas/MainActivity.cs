@@ -16,7 +16,7 @@ namespace hotel_pousadas
         ImageView imgPassword;
         EditText  edUser;
         EditText  edPassword;
-        Button    btEntrar;
+        LinearLayout    btEntrar;
 
         Conection conection;
 
@@ -35,7 +35,7 @@ namespace hotel_pousadas
             imgPassword = FindViewById<ImageView>(Resource.Id.imgPassword);
             edUser      = FindViewById<EditText>(Resource.Id.edUser);
             edPassword  = FindViewById<EditText>(Resource.Id.edPassword);
-            btEntrar    = FindViewById<Button>(Resource.Id.btEntrar);
+            btEntrar    = FindViewById<LinearLayout>(Resource.Id.btEntrar);
 
             //imgLogo.SetImageResource(Resource.Drawable.logo);
             imgLogoUser.SetImageResource(Resource.Drawable.usuarios);
