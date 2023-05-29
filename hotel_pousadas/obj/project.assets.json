@@ -2784,9 +2784,21 @@
             "target": "Package",
             "version": "[1.2.0.5, )"
           },
+          "Xamarin.AndroidX.AppCompat": {
+            "target": "Package",
+            "version": "[1.2.0.5, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.1, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.6.1, )"
+          },
+          "Xamarin.Forms.PancakeView": {
+            "target": "Package",
+            "version": "[2.3.0.759, )"
           },
           "Xamarin.Forms.PancakeView": {
             "target": "Package",
@@ -2796,9 +2808,21 @@
             "target": "Package",
             "version": "[1.0.0.1, )"
           },
+          "Xamarin.Google.Android.Material": {
+            "target": "Package",
+            "version": "[1.0.0.1, )"
+          },
           "Xamarin.MySql.Data": {
             "target": "Package",
             "version": "[1.0.1, )"
+          },
+          "Xamarin.MySql.Data": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.8.116, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

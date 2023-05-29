@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:minWidth="25px"
-    android:gravity="center_horizontal"
     android:minHeight="25px"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/linearLayout1">
+    android:id="@+id/relativeLayout1">
+
     <LinearLayout
         android:gravity="center_vertical|center"
         android:orientation="horizontal"
+        android:id="@+id/layout_cabecalho"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#0E4528">
@@ -30,6 +30,8 @@
         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
+        android:layout_below="@+id/layout_cabecalho"
+        android:id="@+id/layout_info_user"
         android:paddingLeft="6dp"
         android:paddingRight="6dp"
         android:background="#C5C5C5">
@@ -68,21 +70,26 @@
     </LinearLayout>
     <TextView
         android:text="@string/title_body"
+        android:layout_below="@+id/layout_info_user"
+        android:id="@+id/text_lista_itens"
         android:textAlignment="center"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="15dp"
-        android:textColor="#555555"
+        android:textColor="@color/cor_fonte"
         android:layout_width="match_parent"
         android:layout_height="35dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:background="@android:color/transparent"
+        android:layout_below="@+id/text_lista_itens"
+        android:layout_above="@+id/layout_rodape"
+        android:id="@+id/layout_content"
         android:layout_width="match_parent"
         android:paddingLeft="14dp"
         android:paddingRight="10dp"
-        android:layout_height="310dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -92,11 +99,13 @@
 
             <LinearLayout
                 android:background="@drawable/shape"
+                android:id="@+id/layout_bt_separacao_paletizada"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:padding="5dp"
                 android:layout_width="140dp"
-                android:layout_height="90dp">
+                android:layout_height="90dp"
+                android:clickable="true">
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -161,10 +170,19 @@
             </LinearLayout>
         </LinearLayout>        
     </LinearLayout>
-    <Button
-        android:background="@drawable/shape"
-        android:text="@string/botao_sair"
-        android:textColor="#555555"
-        android:layout_width="110dp"
-        android:layout_height="50dp"/>
-</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_rodape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="@string/botao_sair"
+            android:textColor="#555555"
+            android:layout_width="110dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+        
+</RelativeLayout>

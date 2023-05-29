@@ -9,4 +9,9 @@
 	<string name="name_opcao_menu">Separação Paletizada</string>
 	<string name="name_opcao_menu_separacao_fracionada">Separação Fracionada</string>
 	<string name="botao_sair">Sair</string>
+
+	<string name="separar_palete">Separar Palete</string>
+	<string name="botao_mais_opcoes">+ Opcões</string>
+	<string name="nome_filial">F29</string>
+	<string name="icone_menu">icone menu</string>
 </resources>

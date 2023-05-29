@@ -72,6 +72,8 @@ namespace hotel_pousadas.fonte
             {
                 var res = from a in objetosMovimentacoes where a.DiaReserva == dia select a;
 
+                Movimentacoes retorno = objetosMovimentacoes.Find(a => a.DiaReserva == dia);
+
                 if (res.Count() == 0)
                 {
                     listaDiaEscolhido.Add("Nenhuma reserva para este dia.");
