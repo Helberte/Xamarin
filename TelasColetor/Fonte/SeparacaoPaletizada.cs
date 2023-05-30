@@ -17,9 +17,8 @@ namespace TelasColetor.Fonte
     public class SeparacaoPaletizada : Activity
     {
         RecyclerView recyclerView;
-        List<Movimentacoes> objetosMovimentacoes;
-
-      
+       
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,14 +28,13 @@ namespace TelasColetor.Fonte
 
             // pega o recycleView do front
             recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView1);
-                       
+            
             // define quantas colunas o recycleView vai ter
             var gridLayoutManager = new GridLayoutManager(this, 2);
 
             // pega os dados do back e adapta eles para colocar no recycleView
-            var adapter = new RecyclerAdapter(DefineReservas());
+            var adapter = new RecyclerAdapter(GetMenusSeparacaoPaletizadaUsuario());
             //                                      +---- Retorna um objeto contendo um atributo lista com vários outros objetos
-
 
             // Registre o manipulador de cliques de item (abaixo) com o adaptador:
             adapter.ItemClick += Adapter_ItemClick;
@@ -50,7 +48,16 @@ namespace TelasColetor.Fonte
 
         private void Adapter_ItemClick(object sender, int e)
         {
-            Toast.MakeText(this, "Voce clicou em um item.", ToastLength.Long).Show();
+            int posicao = e;
+
+            RecyclerAdapter recyclerAdapter = recyclerView.GetAdapter() as RecyclerAdapter;
+            string rota = recyclerAdapter.items.menuSeparacaoPaletizadaUsuario[posicao].Form.Trim();
+
+            Type type = System.Type.GetType(rota);
+
+            Intent intent = new Intent(this, type);
+            
+            StartActivity(intent);
         }
 
        
@@ -60,13 +67,13 @@ namespace TelasColetor.Fonte
         public class RecyclerAdapter : RecyclerView.Adapter
         {
             // referencia para o objeto contendo a lista de dados
-            public Movimentacoes items;
+            public MenusSeparacaoPaletizada items;
 
             // Manipulador de eventos para cliques de itens:
             public event EventHandler<int> ItemClick;
 
             // recebe no construtor, o conjunto de dados vindo do retorno da API
-            public RecyclerAdapter(Movimentacoes data)
+            public RecyclerAdapter(MenusSeparacaoPaletizada data)
             {
                 items = data;
             }
@@ -90,14 +97,14 @@ namespace TelasColetor.Fonte
             // Preencha o conteúdo do card com os objetos passados (chamado pelo gerenciador de layout) :
             public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
             {
-                var item = items.movimento[position];
+                var item = items.menuSeparacaoPaletizadaUsuario[position];
 
                 // define a descrição e o icone
                 var holder = viewHolder as RecyclerHolder;
-                holder.Descricao.Text = items.movimento[position].NomeCliente;
+                holder.Descricao.Text = item.Descricao;
 
                 // holder.icone.SetImageResource(ImagemMenu.ObtemImagemMenu(item.icone));
-                holder.Icone.SetImageResource(Resource.Drawable.icons8_breakable_96_1);
+                holder.Icone.SetImageResource(item.Icone);
             }
 
             // Gera um evento quando ocorre o clique do item:
@@ -111,7 +118,7 @@ namespace TelasColetor.Fonte
             {
                 get
                 {
-                    return items.movimento.Count;
+                    return items.menuSeparacaoPaletizadaUsuario.Count;
                 }
             }
         }
@@ -145,38 +152,50 @@ namespace TelasColetor.Fonte
         }
 
         // simula dados vindo do banco de dados
-        public Movimentacoes DefineReservas()
-        {
-            string nomesPessoas = "Maria,José,Antônio,João,Francisca,Ana,Luiz,Paulo,Carlos,Manoel,Pedro,Francisca,Marcos,Raimundo,Sebastião,Antônia,Marcelo,Jorge,Márcia,Geraldo,Adriana,Sandra,Luis,Fernando,Fabio,Roberta,Márcio,Edson,André,Sérgio,Josefa,Patrícia,Daniel,Rodrigo,Rafael,Joaquim,Vera,Ricardo,Eduardo";
-            string[] nomes = nomesPessoas.Split(',');
-            Random random = new Random();
-
-            Movimentacoes movimentacoes = new Movimentacoes();
-            movimentacoes.movimento = new List<Movimento>();
-
-            for (int i = 1; i <= 31; i++)
-            {
-                Movimento movimento = new Movimento();
-
-                movimento.DiaReserva = random.Next(1, 31);
-                movimento.NomeCliente = nomes[random.Next(1, 39)];
-                movimento.NumeroReserva = random.Next(1, 300);
-
-                movimentacoes.movimento.Add(movimento);
-            }                   
-            return movimentacoes;
-        }
-
-        public class Movimentacoes
+        public MenusSeparacaoPaletizada GetMenusSeparacaoPaletizadaUsuario()
         { 
-            public List<Movimento> movimento { get; set; }
+            MenusSeparacaoPaletizada menus = new MenusSeparacaoPaletizada();
+            menus.menuSeparacaoPaletizadaUsuario = new List<MenuSeparacaoPaletizadaUsuario>();
+
+                             
+            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            {
+                Descricao = "Separar Palete",
+                Icone = Resource.Drawable.icons8_fork_lift_96,
+                Form = "TelasColetor.Fonte.SepararPalete"
+            });
+            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            {
+                Descricao = "Descer Palete",
+                Icone = Resource.Drawable.icons8_pallet_96_7,
+                Form = ""
+            });
+            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            {
+                Descricao = "Transportar Palete",
+                Icone = Resource.Drawable.icons8_use_forklift_96,
+                Form = ""
+            });
+            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            {
+                Descricao = "Transportar e Expedir Palete",
+                Icone = Resource.Drawable.icons8_end_96,
+                Form = ""
+            });
+
+            return menus;
         }
 
-        public class Movimento
-        {
-            public int DiaReserva { get; set; }
-            public int NumeroReserva { get; set; }
-            public string NomeCliente { get; set; }
+        public class MenusSeparacaoPaletizada
+        {  
+            public List<MenuSeparacaoPaletizadaUsuario> menuSeparacaoPaletizadaUsuario { get; set; }
+        }
+         
+        public class MenuSeparacaoPaletizadaUsuario 
+        { 
+            public string Descricao { get; set; }
+            public int Icone { get; set; }
+            public string Form { get; set; }
         }
     }
-}
+} 

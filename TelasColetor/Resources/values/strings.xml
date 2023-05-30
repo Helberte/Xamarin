@@ -14,4 +14,15 @@
 	<string name="botao_mais_opcoes">+ Opcões</string>
 	<string name="nome_filial">F29</string>
 	<string name="icone_menu">icone menu</string>
+	<string name="text_botao_confirmar">Confirmar</string>
+	<string name="data_documento_descricao">Data do Documento</string>
+	<string name="voltar">Voltar</string>
+	<string name="filial">Filial</string>
+	<string name="filial_codigo">F29</string>
+	<string name="text_data">Data</string>
+	<string name="text_data_extenso">29/10/2022</string>
+	<string name="text_documentos">Documentos</string>
+	<string name="text_documentos_produtos">Produtos do Documento</string>
+	<string name="text_numero_documento">01721581</string>
+
 </resources>

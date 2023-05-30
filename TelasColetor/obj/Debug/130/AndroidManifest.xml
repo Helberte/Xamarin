@@ -16,6 +16,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="SeparacaoPaleteDocumentos" android:name="crc64b1a4cca7acb3ab72.SeparacaoPaleteDocumentos" />
     <activity android:label="SeparacaoPaletizada" android:name="crc64b1a4cca7acb3ab72.SeparacaoPaletizada" />
     <activity android:label="SepararPalete" android:name="crc64b1a4cca7acb3ab72.SepararPalete" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
