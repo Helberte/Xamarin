@@ -60,9 +60,13 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fonte\Produtos.cs" />
     <Compile Include="Fonte\SeparacaoPaleteDocumentos.cs" />
     <Compile Include="Fonte\SeparacaoPaletizada.cs" />
     <Compile Include="Fonte\SepararPalete.cs" />
+    <Compile Include="Fonte\SepararPaleteEtiqueta.cs" />
+    <Compile Include="Fonte\SepararPaleteProdutosDoDocumento.cs" />
+    <Compile Include="Fonte\TransferenciaInformacoes.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Mensagens.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -103,6 +107,9 @@
     <AndroidResource Include="Resources\drawable\shape.xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
     <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
@@ -175,6 +182,25 @@
     <AndroidResource Include="Resources\layout\SepararPaleteProdutosDoDocumento.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SepararPaleteProdutosDoDocumentoItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape_produtos_documento_item.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SepararPaleteEtiqueta.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\separar_palete_etiqueta.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape_separar_palete_etiqueta_content.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

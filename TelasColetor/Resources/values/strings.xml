@@ -24,5 +24,6 @@
 	<string name="text_documentos">Documentos</string>
 	<string name="text_documentos_produtos">Produtos do Documento</string>
 	<string name="text_numero_documento">01721581</string>
-
+	<string name="hint_leia_endereco">Leia um Endereço</string>
+	
 </resources>

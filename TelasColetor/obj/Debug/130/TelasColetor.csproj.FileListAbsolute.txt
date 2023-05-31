@@ -341,3 +341,12 @@ D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\icons8_start_96.png
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SeparacaoPaleteDocumentos_RecyclerAdapter.java
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SeparacaoPaleteDocumentos_RecyclerHolder.java
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\separarpaleteprodutosdodocumento.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaleteProdutosDoDocumento.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\separarpaleteprodutosdodocumentoitem.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\shape_produtos_documento_item.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaleteProdutosDoDocumento_RecyclerAdapter.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaleteProdutosDoDocumento_RecyclerHolder.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\separarpaleteetiqueta.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\separar_palete_etiqueta.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\shape_separar_palete_etiqueta_content.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaleteEtiqueta.java

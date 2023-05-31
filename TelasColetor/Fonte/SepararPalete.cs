@@ -39,6 +39,11 @@ namespace TelasColetor.Fonte
             intent.PutExtra("data", datePicker.DateTime.ToString("dd/MM/yyyy"));
             intent.PutExtra("filial", editText_filial.Text);
 
+            TransferenciaInformacoes.FinalizouCarregamento = false;
+            ProgressDialog progress = new ProgressDialog(this);
+            TransferenciaInformacoes.ExibirMensagemCarregando(progress);
+
+
             StartActivity(intent);
         }
 

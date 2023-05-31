@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ytlNu0RwgzaWYqDUp+XX8+KdeOdhiEvSzk1titbMU16VY5rSPNniwQxFjPnJrVs8LDWjtzmFaCVzPP66cmycwQ==",
+  "dgSpecHash": "FbkV8KIAGG+31KtiZLWTxm5SyRUSUn44i5AkelxddrDj3R+YHecFh9MXXs7EA6b6egUpe8aKnwKvOFGHSnefXQ==",
   "success": true,
   "projectFilePath": "D:\\Helberte\\Xamarin\\TelasColetor\\TelasColetor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\64429-helberte\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\64429-helberte\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\64429-helberte\\.nuget\\packages\\xamarin.androidx.activity\\1.1.0.3\\xamarin.androidx.activity.1.1.0.3.nupkg.sha512",
     "C:\\Users\\64429-helberte\\.nuget\\packages\\xamarin.androidx.annotation\\1.1.0.7\\xamarin.androidx.annotation.1.1.0.7.nupkg.sha512",
