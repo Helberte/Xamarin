@@ -26,6 +26,7 @@ namespace TelasColetor.Fonte
         EditText editText_produto_validade;
         EditText editText_produto_endereco;
         Button   bt_bloquear;
+        Button   separar_palete_etiqueta_botao_voltar;
         Produtos produtos; 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -37,17 +38,18 @@ namespace TelasColetor.Fonte
             string produto = Intent.GetStringExtra("produto");
             produtos = JsonConvert.DeserializeObject<Produtos>(produto);
 
-            textView_produto_etiqueta      = FindViewById<TextView>(Resource.Id.textView_produto_etiqueta);
-            textView_produto_descricao     = FindViewById<TextView>(Resource.Id.textView_produto_descricao);
-            textView_filial                = FindViewById<TextView>(Resource.Id.textView_filial);
-            textView_data                  = FindViewById<TextView>(Resource.Id.textView_data);
-            editText_produto_codigo        = FindViewById<EditText>(Resource.Id.editText_produto_codigo);
-            editText_produto_referencia    = FindViewById<EditText>(Resource.Id.editText_produto_referencia);
-            editText_produto_qtd_embalagem = FindViewById<EditText>(Resource.Id.editText_produto_qtd_embalagem);
-            editText_produto_lote          = FindViewById<EditText>(Resource.Id.editText_produto_lote);
-            editText_produto_validade      = FindViewById<EditText>(Resource.Id.editText_produto_validade);
-            editText_produto_endereco      = FindViewById<EditText>(Resource.Id.editText_produto_endereco);
-            bt_bloquear                    = FindViewById<Button>(Resource.Id.bt_bloquear);
+            textView_produto_etiqueta            = FindViewById<TextView>(Resource.Id.textView_produto_etiqueta);
+            textView_produto_descricao           = FindViewById<TextView>(Resource.Id.textView_produto_descricao);
+            textView_filial                      = FindViewById<TextView>(Resource.Id.textView_filial);
+            textView_data                        = FindViewById<TextView>(Resource.Id.textView_data);
+            editText_produto_codigo              = FindViewById<EditText>(Resource.Id.editText_produto_codigo);
+            editText_produto_referencia          = FindViewById<EditText>(Resource.Id.editText_produto_referencia);
+            editText_produto_qtd_embalagem       = FindViewById<EditText>(Resource.Id.editText_produto_qtd_embalagem);
+            editText_produto_lote                = FindViewById<EditText>(Resource.Id.editText_produto_lote);
+            editText_produto_validade            = FindViewById<EditText>(Resource.Id.editText_produto_validade);
+            editText_produto_endereco            = FindViewById<EditText>(Resource.Id.editText_produto_endereco);
+            bt_bloquear                          = FindViewById<Button>(Resource.Id.bt_bloquear);
+            separar_palete_etiqueta_botao_voltar = FindViewById<Button>(Resource.Id.separar_palete_etiqueta_botao_voltar);
 
             textView_produto_etiqueta.Text      = produtos.Etiqueta;
             textView_produto_descricao.Text     = produtos.Descricao.ToUpper();
@@ -61,6 +63,12 @@ namespace TelasColetor.Fonte
             textView_data.Text                  = Intent.GetStringExtra("data");
 
             bt_bloquear.Click += Bt_bloquear_Click;
+            separar_palete_etiqueta_botao_voltar.Click += Separar_palete_etiqueta_botao_voltar_Click;
+        }
+
+        private void Separar_palete_etiqueta_botao_voltar_Click(object sender, EventArgs e)
+        {
+            Finish();
         }
 
         private void Bt_bloquear_Click(object sender, EventArgs e)

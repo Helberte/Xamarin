@@ -21,7 +21,8 @@ namespace TelasColetor.Fonte
         TextView textView_filial;
         TextView textView_data;
         TextView textview_documentos_numero;
-   
+        Button   separar_palete_produtos_documento_botao_voltar;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,11 +30,12 @@ namespace TelasColetor.Fonte
             // Create your application here
             SetContentView(Resource.Layout.SepararPaleteProdutosDoDocumento);
 
-            recyclerView               = FindViewById<RecyclerView>(Resource.Id.recyclerView_documentos);
-            textView_filial            = FindViewById<TextView>(Resource.Id.textView_filial);
-            textView_data              = FindViewById<TextView>(Resource.Id.textView_data);
-            textview_documentos_numero = FindViewById<TextView>(Resource.Id.textview_documentos_numero);
-                    
+            recyclerView                                   = FindViewById<RecyclerView>(Resource.Id.recyclerView_documentos);
+            textView_filial                                = FindViewById<TextView>(Resource.Id.textView_filial);
+            textView_data                                  = FindViewById<TextView>(Resource.Id.textView_data);
+            textview_documentos_numero                     = FindViewById<TextView>(Resource.Id.textview_documentos_numero);
+            separar_palete_produtos_documento_botao_voltar = FindViewById<Button>(Resource.Id.separar_palete_produtos_documento_botao_voltar);
+
             textView_filial.Text = Intent.GetStringExtra("filial");
             textView_data.Text   = Intent.GetStringExtra("data");
 
@@ -44,11 +46,17 @@ namespace TelasColetor.Fonte
             RecyclerAdapter adapter = new RecyclerAdapter(TransferenciaInformacoes.produtos);
             adapter.ItemClick += Adapter_ItemClick;
 
-            adapter.ItemClick += Adapter_ItemClick;
+            //adapter.ItemClick += Adapter_ItemClick;
+            separar_palete_produtos_documento_botao_voltar.Click += Separar_palete_produtos_documento_botao_voltar_Click;
 
             recyclerView.SetLayoutManager(gridLayoutManager);
             recyclerView.HasFixedSize = true;
             recyclerView.SetAdapter(adapter);
+        }
+
+        private void Separar_palete_produtos_documento_botao_voltar_Click(object sender, EventArgs e)
+        {
+            Finish();
         }
 
         private void Adapter_ItemClick(object sender, int e)

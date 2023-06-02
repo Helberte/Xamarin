@@ -17,8 +17,8 @@ namespace TelasColetor.Fonte
     public class SeparacaoPaletizada : Activity
     {
         RecyclerView recyclerView;
-       
-        
+        Button separacao_paletizada_voltar;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,7 +28,8 @@ namespace TelasColetor.Fonte
 
             // pega o recycleView do front
             recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView1);
-            
+            separacao_paletizada_voltar = FindViewById<Button>(Resource.Id.separacao_paletizada_voltar);
+
             // define quantas colunas o recycleView vai ter
             var gridLayoutManager = new GridLayoutManager(this, 2);
 
@@ -38,6 +39,7 @@ namespace TelasColetor.Fonte
 
             // Registre o manipulador de cliques de item (abaixo) com o adaptador:
             adapter.ItemClick += Adapter_ItemClick;
+            separacao_paletizada_voltar.Click += Separacao_paletizada_voltar_Click;
 
             recyclerView.SetLayoutManager(gridLayoutManager);
             recyclerView.HasFixedSize = true;
@@ -46,12 +48,17 @@ namespace TelasColetor.Fonte
             recyclerView.SetAdapter(adapter);
         }
 
+        private void Separacao_paletizada_voltar_Click(object sender, EventArgs e)
+        {       
+            Finish();
+        }
+
         private void Adapter_ItemClick(object sender, int e)
         {
             int posicao = e;
 
             RecyclerAdapter recyclerAdapter = recyclerView.GetAdapter() as RecyclerAdapter;
-            string rota = recyclerAdapter.items.menuSeparacaoPaletizadaUsuario[posicao].Form.Trim();
+            string rota = recyclerAdapter.items.MenuSeparacaoPaletizadaUsuario[posicao].Form.Trim();
 
             Type type = System.Type.GetType(rota);
 
@@ -59,10 +66,8 @@ namespace TelasColetor.Fonte
             
             StartActivity(intent);
         }
-
-       
+               
         // ADAPTER
-
         // Adaptador para conectar o conjunto de dados(vindos do banco, retorno da API) ao RecyclerView:
         public class RecyclerAdapter : RecyclerView.Adapter
         {
@@ -97,7 +102,7 @@ namespace TelasColetor.Fonte
             // Preencha o conteúdo do card com os objetos passados (chamado pelo gerenciador de layout) :
             public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
             {
-                var item = items.menuSeparacaoPaletizadaUsuario[position];
+                var item = items.MenuSeparacaoPaletizadaUsuario[position];
 
                 // define a descrição e o icone
                 var holder = viewHolder as RecyclerHolder;
@@ -118,7 +123,7 @@ namespace TelasColetor.Fonte
             {
                 get
                 {
-                    return items.menuSeparacaoPaletizadaUsuario.Count;
+                    return items.MenuSeparacaoPaletizadaUsuario.Count;
                 }
             }
         }
@@ -142,7 +147,6 @@ namespace TelasColetor.Fonte
                 Icone = (ImageView)itemView.FindViewById(Resource.Id.Menu_Coletor_Item_Icone);
                 //                                                          +--- pega estes itens exatamente da nova view de card personalizada que foi criada, FrameLayout
 
-
                 // cria o evento de click para cada item
 
                 // Detecte cliques do usuário na exibição do item e informe qual item
@@ -155,28 +159,27 @@ namespace TelasColetor.Fonte
         public MenusSeparacaoPaletizada GetMenusSeparacaoPaletizadaUsuario()
         { 
             MenusSeparacaoPaletizada menus = new MenusSeparacaoPaletizada();
-            menus.menuSeparacaoPaletizadaUsuario = new List<MenuSeparacaoPaletizadaUsuario>();
-
-                             
-            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            menus.MenuSeparacaoPaletizadaUsuario = new List<MenuSeparacaoPaletizadaUsuario>();
+                                         
+            menus.MenuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
             {
                 Descricao = "Separar Palete",
                 Icone = Resource.Drawable.icons8_fork_lift_96,
                 Form = "TelasColetor.Fonte.SepararPalete"
             });
-            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            menus.MenuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
             {
                 Descricao = "Descer Palete",
                 Icone = Resource.Drawable.icons8_pallet_96_7,
                 Form = ""
             });
-            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            menus.MenuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
             {
                 Descricao = "Transportar Palete",
                 Icone = Resource.Drawable.icons8_use_forklift_96,
                 Form = ""
             });
-            menus.menuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
+            menus.MenuSeparacaoPaletizadaUsuario.Add(new MenuSeparacaoPaletizadaUsuario
             {
                 Descricao = "Transportar e Expedir Palete",
                 Icone = Resource.Drawable.icons8_end_96,
@@ -188,7 +191,7 @@ namespace TelasColetor.Fonte
 
         public class MenusSeparacaoPaletizada
         {  
-            public List<MenuSeparacaoPaletizadaUsuario> menuSeparacaoPaletizadaUsuario { get; set; }
+            public List<MenuSeparacaoPaletizadaUsuario> MenuSeparacaoPaletizadaUsuario { get; set; }
         }
          
         public class MenuSeparacaoPaletizadaUsuario 

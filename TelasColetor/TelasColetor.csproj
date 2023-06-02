@@ -67,6 +67,7 @@
     <Compile Include="Fonte\SepararPaleteEtiqueta.cs" />
     <Compile Include="Fonte\SepararPaleteEtiquetaBloquear.cs" />
     <Compile Include="Fonte\SepararPaleteListaDeBaias.cs" />
+    <Compile Include="Fonte\SepararPaletePaletePendente.cs" />
     <Compile Include="Fonte\SepararPaleteProdutosDoDocumento.cs" />
     <Compile Include="Fonte\TransferenciaInformacoes.cs" />
     <Compile Include="MainActivity.cs" />
@@ -225,6 +226,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SepararPaleteListaDeBaiasItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SepararPaletePaletePendente.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

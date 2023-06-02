@@ -26,11 +26,11 @@ namespace TelasColetor
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
             // começar criar os componentes necessários para o recyclerView
-
             recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView_menu_principal);
 
             // definir o layout do grid que será mostrado, neste caso, duas colunas
@@ -91,7 +91,6 @@ namespace TelasColetor
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-
 
         // ADAPTER
 
@@ -182,11 +181,8 @@ namespace TelasColetor
             }
         }
 
-
-
         // simula os dados vindos do back-end
         // preenche menu
-
         public Menus GetMenusUsuario()
         {            
             // SepararPalete            
@@ -222,6 +218,7 @@ namespace TelasColetor
         {
             public List<Menu> MenusUsuario { get; set; }
         }
+
         public class Menu
         {
             public string Descricao { get; set; }

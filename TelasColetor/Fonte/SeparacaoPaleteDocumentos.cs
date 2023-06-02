@@ -24,6 +24,7 @@ namespace TelasColetor.Fonte
         TextView textView_data;
         string nomesProdutos = "";
         RecyclerView recyclerView;
+        Button separar_palete_botao_voltar;
 
         List<Produtos> produtosDoDocumento;
 
@@ -34,10 +35,11 @@ namespace TelasColetor.Fonte
             // Create your application here
             SetContentView(Resource.Layout.SepararPaleteDocumentos);
 
-            textView_filial = FindViewById<TextView>(Resource.Id.textView_filial);
-            textView_data   = FindViewById<TextView>(Resource.Id.textView_data);
-            recyclerView    = FindViewById<RecyclerView>(Resource.Id.recyclerView_documentos);
-                    
+            textView_filial             = FindViewById<TextView>(Resource.Id.textView_filial);
+            textView_data               = FindViewById<TextView>(Resource.Id.textView_data);
+            recyclerView                = FindViewById<RecyclerView>(Resource.Id.recyclerView_documentos);
+            separar_palete_botao_voltar = FindViewById<Button>(Resource.Id.separar_palete_botao_voltar);
+
             textView_filial.Text = Intent.GetStringExtra("filial");
             textView_data.Text   = Intent.GetStringExtra("data");
 
@@ -50,18 +52,23 @@ namespace TelasColetor.Fonte
                     Thread.Sleep(400);
                 }
                 RunOnUiThread(() => TransferenciaInformacoes.ProgressBar.Dismiss());
-
             })).Start();
 
             RecyclerAdapter adapter = new RecyclerAdapter(GetDocumentos());
             TransferenciaInformacoes.FinalizouCarregamento = true;
 
             adapter.ItemClick += Adapter_ItemClick;
+            separar_palete_botao_voltar.Click += Separar_palete_botao_voltar_Click;
 
             recyclerView.SetLayoutManager(gridLayoutManager);
             recyclerView.HasFixedSize = true;
 
             recyclerView.SetAdapter(adapter);
+        }
+
+        private void Separar_palete_botao_voltar_Click(object sender, EventArgs e)
+        {
+            Finish();
         }
 
         private void Adapter_ItemClick(object sender, int e)

@@ -16,8 +16,9 @@ namespace TelasColetor.Fonte
     public class SepararPaleteListaDeBaias : Activity
     {
         RecyclerView separar_palete_lista_de_baias_recycler;
-        TextView textView_filial;
-        TextView textView_etiqueta;
+        TextView     textView_filial;
+        TextView     textView_etiqueta;
+        Button       separar_palete_baias_botao_voltar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,6 +31,7 @@ namespace TelasColetor.Fonte
             separar_palete_lista_de_baias_recycler = FindViewById<RecyclerView>(Resource.Id.separar_palete_lista_de_baias_recycler);
             textView_filial                        = FindViewById<TextView>(Resource.Id.textView_filial);
             textView_etiqueta                      = FindViewById<TextView>(Resource.Id.textView_etiqueta);
+            separar_palete_baias_botao_voltar      = FindViewById<Button>(Resource.Id.separar_palete_baias_botao_voltar);
 
             textView_filial.Text   = Intent.GetStringExtra("filial");
             textView_etiqueta.Text = Intent.GetStringExtra("etiqueta");
@@ -42,6 +44,7 @@ namespace TelasColetor.Fonte
 
             // registra o evento do click nos itens
             adapter.ItemClick += Adapter_ItemClick;
+            separar_palete_baias_botao_voltar.Click += Separar_palete_baias_botao_voltar_Click;
 
             // coloca o layout para o recycler view
             separar_palete_lista_de_baias_recycler.SetLayoutManager(gridLayout);
@@ -51,9 +54,24 @@ namespace TelasColetor.Fonte
             separar_palete_lista_de_baias_recycler.SetAdapter(adapter);              
         }
 
+        private void Separar_palete_baias_botao_voltar_Click(object sender, EventArgs e)
+        {
+            Finish();
+        }
+
         private void Adapter_ItemClick(object sender, int e)
         {
-            throw new NotImplementedException();
+            int posicao = e;
+
+            RecyclerAdapter adapter = separar_palete_lista_de_baias_recycler.GetAdapter() as RecyclerAdapter;
+            string baia = adapter.items[posicao].NumeroBaia;
+
+            Intent intent = new Intent(this, typeof(SepararPaletePaletePendente));
+            intent.PutExtra("filial", textView_filial.Text);
+            intent.PutExtra("etiqueta", textView_etiqueta.Text);
+            intent.PutExtra("baia", baia);
+
+            StartActivity(intent);
         }
 
         private class RecyclerAdapter : RecyclerView.Adapter

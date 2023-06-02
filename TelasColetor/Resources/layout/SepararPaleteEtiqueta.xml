@@ -281,6 +281,7 @@
         <Button
             android:text="@string/voltar"
             android:textColor="@color/cor_fonte"
+            android:id="@+id/separar_palete_etiqueta_botao_voltar"
             android:textSize="12dp"
             android:textStyle="bold"
             android:layout_marginRight="5dp"
@@ -296,5 +297,4 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"/>    
     </LinearLayout>
-
 </RelativeLayout>

@@ -107,7 +107,8 @@
         <Button
             android:layout_width="110dp"
             android:layout_height="50dp"
-            android:text="@string/botao_sair"
+            android:text="@string/voltar"
+            android:id="@+id/separacao_paletizada_voltar"
             android:textColor="#555555"
             android:textStyle="bold"/>
     </LinearLayout>

@@ -22,6 +22,7 @@
     <activity android:label="SepararPaleteEtiqueta" android:name="crc64b1a4cca7acb3ab72.SepararPaleteEtiqueta" />
     <activity android:label="SepararPaleteEtiquetaBloquear" android:name="crc64b1a4cca7acb3ab72.SepararPaleteEtiquetaBloquear" />
     <activity android:label="SepararPaleteListaDeBaias" android:name="crc64b1a4cca7acb3ab72.SepararPaleteListaDeBaias" />
+    <activity android:label="SepararPaletePaletePendente" android:name="crc64b1a4cca7acb3ab72.SepararPaletePaletePendente" />
     <activity android:label="SepararPaleteProdutosDoDocumento" android:name="crc64b1a4cca7acb3ab72.SepararPaleteProdutosDoDocumento" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />

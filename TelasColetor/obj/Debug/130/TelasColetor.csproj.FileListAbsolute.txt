@@ -383,3 +383,5 @@ D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaleteListaDeBaias_RecyclerViewAdapter.java
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaleteListaDeBaias_RecyclerViewHolder.java
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaleteProdutosDoDocumento_RecyclerViewAdapter.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\separarpaletepaletependente.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64b1a4cca7acb3ab72\SepararPaletePaletePendente.java

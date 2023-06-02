@@ -15,6 +15,7 @@ Button;obj\Debug\130\res\layout\separarpaletedocumentos.xml
 Button;obj\Debug\130\res\layout\separarpaleteetiqueta.xml
 Button;obj\Debug\130\res\layout\separarpaleteetiquetabloquear.xml
 Button;obj\Debug\130\res\layout\separarpaletelistadebaias.xml
+Button;obj\Debug\130\res\layout\separarpaletepaletependente.xml
 Button;obj\Debug\130\res\layout\separarpaleteprodutosdodocumento.xml
 cache-path;D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\130\res\values\colors.xml
@@ -31,6 +32,7 @@ EditText;obj\Debug\130\res\layout\separar_palete.xml
 EditText;obj\Debug\130\res\layout\separarpaleteetiqueta.xml
 EditText;obj\Debug\130\res\layout\separarpaleteetiquetabloquear.xml
 EditText;obj\Debug\130\res\layout\separarpaletelistadebaias.xml
+EditText;obj\Debug\130\res\layout\separarpaletepaletependente.xml
 EditText;obj\Debug\130\res\layout\separarpaleteprodutosdodocumento.xml
 external-cache-path;D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -58,6 +60,7 @@ LinearLayout;obj\Debug\130\res\layout\separarpaleteetiqueta.xml
 LinearLayout;obj\Debug\130\res\layout\separarpaleteetiquetabloquear.xml
 LinearLayout;obj\Debug\130\res\layout\separarpaletelistadebaias.xml
 LinearLayout;obj\Debug\130\res\layout\separarpaletelistadebaiasitem.xml
+LinearLayout;obj\Debug\130\res\layout\separarpaletepaletependente.xml
 LinearLayout;obj\Debug\130\res\layout\separarpaleteprodutosdodocumento.xml
 LinearLayout;obj\Debug\130\res\layout\separarpaleteprodutosdodocumentoitem.xml
 paths;D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -69,6 +72,7 @@ RelativeLayout;obj\Debug\130\res\layout\separarpaletedocumentos.xml
 RelativeLayout;obj\Debug\130\res\layout\separarpaleteetiqueta.xml
 RelativeLayout;obj\Debug\130\res\layout\separarpaleteetiquetabloquear.xml
 RelativeLayout;obj\Debug\130\res\layout\separarpaletelistadebaias.xml
+RelativeLayout;obj\Debug\130\res\layout\separarpaletepaletependente.xml
 RelativeLayout;obj\Debug\130\res\layout\separarpaleteprodutosdodocumento.xml
 resources;obj\Debug\130\res\drawable\motivos_prompt.xml
 resources;obj\Debug\130\res\values\colors.xml
@@ -105,5 +109,6 @@ TextView;obj\Debug\130\res\layout\separarpaleteetiqueta.xml
 TextView;obj\Debug\130\res\layout\separarpaleteetiquetabloquear.xml
 TextView;obj\Debug\130\res\layout\separarpaletelistadebaias.xml
 TextView;obj\Debug\130\res\layout\separarpaletelistadebaiasitem.xml
+TextView;obj\Debug\130\res\layout\separarpaletepaletependente.xml
 TextView;obj\Debug\130\res\layout\separarpaleteprodutosdodocumento.xml
 TextView;obj\Debug\130\res\layout\separarpaleteprodutosdodocumentoitem.xml

@@ -30,6 +30,7 @@ namespace TelasColetor.Fonte
         EditText separar_palete_etiqueta_bloquear_produto_lote;
         EditText separar_palete_etiqueta_bloquear_produto_validade;
         EditText separar_palete_etiqueta_bloquear_produto_endereco;
+        Button   separar_palete_bloquear_botao_voltar;
 
         Produtos produto;
         int posicao = 0;
@@ -57,22 +58,29 @@ namespace TelasColetor.Fonte
             separar_palete_etiqueta_bloquear_produto_lote       = FindViewById<EditText>(Resource.Id.separar_palete_etiqueta_bloquear_produto_lote);
             separar_palete_etiqueta_bloquear_produto_validade   = FindViewById<EditText>(Resource.Id.separar_palete_etiqueta_bloquear_produto_validade);
             separar_palete_etiqueta_bloquear_produto_endereco   = FindViewById<EditText>(Resource.Id.separar_palete_etiqueta_bloquear_produto_endereco);
-            
-            separar_palete_etiqueta_bloquear_filial             .Text = Intent.GetStringExtra("filial");
-            separar_palete_etiqueta_bloquear_data               .Text = Intent.GetStringExtra("data");
-            separar_palete_etiqueta_bloquear_produto_etiqueta.Text = produto.Etiqueta;
-            separar_palete_etiqueta_bloquear_produto_descricao.Text = produto.Descricao.ToUpper();
-            separar_palete_etiqueta_bloquear_produto_codigo.Text = produto.Codigo;
+            separar_palete_bloquear_botao_voltar                = FindViewById<Button>(Resource.Id.separar_palete_bloquear_botao_voltar);
+
+            separar_palete_etiqueta_bloquear_filial.Text             = Intent.GetStringExtra("filial");
+            separar_palete_etiqueta_bloquear_data.Text               = Intent.GetStringExtra("data");
+            separar_palete_etiqueta_bloquear_produto_etiqueta.Text   = produto.Etiqueta;
+            separar_palete_etiqueta_bloquear_produto_descricao.Text  = produto.Descricao.ToUpper();
+            separar_palete_etiqueta_bloquear_produto_codigo.Text     = produto.Codigo;
             separar_palete_etiqueta_bloquear_produto_referencia.Text = produto.Referencia;
-            separar_palete_etiqueta_bloquear_qtd_embalagem.Text = produto.QuantidadeEmbalagem.ToString();
-            separar_palete_etiqueta_bloquear_produto_lote.Text = produto.Lote;
-            separar_palete_etiqueta_bloquear_produto_validade.Text = produto.Validade;
-            separar_palete_etiqueta_bloquear_produto_endereco.Text = produto.Localizacao[..2] + "-" + produto.Localizacao.Substring(2, 2) + "-" + produto.Localizacao.Substring(4, 2) + "-" + produto.Localizacao[6..];
+            separar_palete_etiqueta_bloquear_qtd_embalagem.Text      = produto.QuantidadeEmbalagem.ToString();
+            separar_palete_etiqueta_bloquear_produto_lote.Text       = produto.Lote;
+            separar_palete_etiqueta_bloquear_produto_validade.Text   = produto.Validade;
+            separar_palete_etiqueta_bloquear_produto_endereco.Text   = produto.Localizacao[..2] + "-" + produto.Localizacao.Substring(2, 2) + "-" + produto.Localizacao.Substring(4, 2) + "-" + produto.Localizacao[6..];
 
             PopulaSpinner(spinner_motivo_bloqueio);
 
-            spinner_motivo_bloqueio.ItemSelected += Spinner_motivo_bloqueio_ItemSelected;
-            bt_confirmar_bloqueio.Click += Bt_confirmar_bloqueio_Click;
+            spinner_motivo_bloqueio.ItemSelected       += Spinner_motivo_bloqueio_ItemSelected;
+            bt_confirmar_bloqueio.Click                += Bt_confirmar_bloqueio_Click;
+            separar_palete_bloquear_botao_voltar.Click += Separar_palete_bloquear_botao_voltar_Click;
+        }
+
+        private void Separar_palete_bloquear_botao_voltar_Click(object sender, EventArgs e)
+        {
+            Finish();
         }
 
         private void Bt_confirmar_bloqueio_Click(object sender, EventArgs e)
