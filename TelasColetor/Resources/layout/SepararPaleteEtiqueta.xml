@@ -86,6 +86,7 @@
             <TextView
                 android:text="02361041"
                 android:layout_marginLeft="5dp"
+                android:id="@+id/textView_produto_etiqueta"
                 android:gravity="center"
                 android:textSize="17dp"
                 android:textColor="#fff"
@@ -97,6 +98,9 @@
             android:text="MOLHO TOM QUERO TRADICIONAL"
             android:layout_width="match_parent"
             android:textAlignment="center"
+            android:id="@+id/textView_produto_descricao"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
             android:textStyle="bold"
             android:textColor="@color/cor_fonte"
             android:paddingTop="5dp"
@@ -105,6 +109,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_marginTop="-3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
@@ -118,8 +124,12 @@
                 <EditText
                     android:text="08682734"
                     android:textSize="12dp"
+                    android:id="@+id/editText_produto_codigo"
                     android:textStyle="bold"
                     android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:backgroundTint="#636363"
                     android:layout_marginLeft="-3dp"
                     android:layout_marginTop="-8dp"
                     android:layout_width="67dp"
@@ -138,6 +148,10 @@
                     android:text="78961025018"
                     android:textSize="12dp"
                     android:textStyle="bold"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:backgroundTint="#636363"
+                    android:id="@+id/editText_produto_referencia"
                     android:inputType="number"
                     android:layout_marginLeft="-3dp"
                     android:layout_marginTop="-8dp"
@@ -157,7 +171,11 @@
                     android:text="24"
                     android:textSize="12dp"
                     android:textStyle="bold"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:backgroundTint="#636363"
                     android:inputType="number"
+                    android:id="@+id/editText_produto_qtd_embalagem"
                     android:layout_marginLeft="-3dp"
                     android:layout_marginTop="-8dp"
                     android:layout_width="match_parent"
@@ -167,6 +185,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_marginTop="-3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
@@ -181,6 +201,10 @@
                     android:text="SL"
                     android:textSize="12dp"
                     android:textStyle="bold"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:backgroundTint="#636363"
+                    android:id="@+id/editText_produto_lote"
                     android:inputType="number"
                     android:layout_marginLeft="-3dp"
                     android:layout_marginTop="-8dp"
@@ -201,6 +225,10 @@
                     android:textSize="12dp"
                     android:textStyle="bold"
                     android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:backgroundTint="#636363"
+                    android:id="@+id/editText_produto_validade"
                     android:layout_marginLeft="-3dp"
                     android:layout_marginTop="-8dp"
                     android:layout_width="85dp"
@@ -219,7 +247,11 @@
                     android:text="01-30-03-0002"
                     android:textSize="12dp"
                     android:textStyle="bold"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:backgroundTint="#636363"
                     android:inputType="number"
+                    android:id="@+id/editText_produto_endereco"
                     android:layout_marginLeft="-3dp"
                     android:layout_marginTop="-8dp"
                     android:layout_width="match_parent"
@@ -251,8 +283,18 @@
             android:textColor="@color/cor_fonte"
             android:textSize="12dp"
             android:textStyle="bold"
+            android:layout_marginRight="5dp"
             android:layout_width="100dp"
-            android:layout_height="match_parent"/>       
+            android:layout_height="match_parent"/>    
+        <Button
+            android:text="@string/text_bloquear"
+            android:textColor="@color/cor_fonte"
+            android:textSize="12dp"
+            android:id="@+id/bt_bloquear"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>    
     </LinearLayout>
 
 </RelativeLayout>

@@ -19,5 +19,9 @@ namespace TelasColetor.Fonte
         public int Gramas { get; set; }
         public int QuantidadeEmbalagem { get; set; }
         public string Localizacao { get; set; }
+        public string Codigo { get; set; }
+        public string Referencia { get; set; }
+        public string Lote { get; set; }
+        public string Validade { get; set; }
     }
 }

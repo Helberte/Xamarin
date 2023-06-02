@@ -65,6 +65,8 @@
     <Compile Include="Fonte\SeparacaoPaletizada.cs" />
     <Compile Include="Fonte\SepararPalete.cs" />
     <Compile Include="Fonte\SepararPaleteEtiqueta.cs" />
+    <Compile Include="Fonte\SepararPaleteEtiquetaBloquear.cs" />
+    <Compile Include="Fonte\SepararPaleteListaDeBaias.cs" />
     <Compile Include="Fonte\SepararPaleteProdutosDoDocumento.cs" />
     <Compile Include="Fonte\TransferenciaInformacoes.cs" />
     <Compile Include="MainActivity.cs" />
@@ -201,6 +203,30 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\shape_separar_palete_etiqueta_content.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_information_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SepararPaleteEtiquetaBloquear.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\separar_palete_etiqueta_bloquear.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_question_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SepararPaleteListaDeBaias.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SepararPaleteListaDeBaiasItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

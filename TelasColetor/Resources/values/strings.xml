@@ -25,5 +25,8 @@
 	<string name="text_documentos_produtos">Produtos do Documento</string>
 	<string name="text_numero_documento">01721581</string>
 	<string name="hint_leia_endereco">Leia um Endereço</string>
+	<string name="text_bloquear">Bloquear</string>
+	<string name="hint_leia_etiqueta">Leia uma Etiqueta</string>
+	<string name="hint_leia_baia">Leia uma Baia</string>
 	
 </resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/frameLayout1">
+    <LinearLayout
+        android:id="@+id/layout_content_baias"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#D6D9E4"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Baia:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="12"
+                android:layout_width="wrap_content"
+                android:id="@+id/textview_baia"
+                android:textStyle="bold"
+                android:textColor="@color/cor_fonte"
+                android:layout_marginLeft="3dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
