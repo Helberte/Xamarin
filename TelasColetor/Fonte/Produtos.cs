@@ -22,6 +22,11 @@ namespace TelasColetor.Fonte
         public string Codigo { get; set; }
         public string Referencia { get; set; }
         public string Lote { get; set; }
-        public string Validade { get; set; }
+        public string Validade { get; set; } 
+        public int Pendente { get; set; }
+        public string Ean { get; set; }
+        public string Dun { get; set; }
+        public int Quantidade_a_registrar { get; set; }
+        public float Unidade { get; set; } 
     }
 }

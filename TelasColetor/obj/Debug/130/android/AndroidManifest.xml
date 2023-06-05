@@ -24,6 +24,13 @@
     <activity android:name="crc64b1a4cca7acb3ab72.SepararPaleteListaDeBaias" android:label="SepararPaleteListaDeBaias" />
     <activity android:name="crc64b1a4cca7acb3ab72.SepararPaletePaletePendente" android:label="SepararPaletePaletePendente" />
     <activity android:name="crc64b1a4cca7acb3ab72.SepararPaleteProdutosDoDocumento" android:label="SepararPaleteProdutosDoDocumento" />
+    <activity android:name="crc648e78c68299137e84.SeparacaoFracionada" android:label="SeparacaoFracionada" />
+    <activity android:name="crc648e78c68299137e84.SeparacaoFracionadaEscolherData" android:label="SeparacaoFracionadaEscolherData" />
+    <activity android:name="crc648e78c68299137e84.SeparacaoFracionadaInformacoesDoProduto" android:label="SeparacaoFracionadaInformacoesDoProduto" />
+    <activity android:name="crc648e78c68299137e84.SeparacaoFracionadaLeiaItem" android:label="SeparacaoFracionadaLeiaItem" />
+    <activity android:name="crc648e78c68299137e84.SeparacaoFracionadaLeituraPorCaixa" android:label="SeparacaoFracionadaLeituraPorCaixa" />
+    <activity android:name="crc648e78c68299137e84.SeparacaoFracionadaListaDocumentos" android:label="SeparacaoFracionadaListaDocumentos" />
+    <activity android:name="crc648e78c68299137e84.SeparacaoFracionaProdutosDoDocumento" android:label="SeparacaoFracionaProdutosDoDocumento" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <receiver android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" />
     <receiver android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" />

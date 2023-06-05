@@ -27,13 +27,13 @@ namespace TelasColetor.Fonte
             // Faz a ligação deste fonte com a tela de design
             SetContentView(Resource.Layout.Separar_palete);
 
-            datePicker                = FindViewById<DatePicker>(Resource.Id.datePickerAnoDocumento);
-            botao_confirmar           = FindViewById<Button>(Resource.Id.botao_confirmar);
-            separar_palete_botao_sair = FindViewById<Button>(Resource.Id.separar_palete_botao_sair);
-            editText_filial           = FindViewById<EditText>(Resource.Id.editText_filial);
-
-            botao_confirmar.Click  += Botao_confirmar_Click;
-            datePicker.DateChanged += DatePicker_DateChanged;
+            datePicker                      = FindViewById<DatePicker>(Resource.Id.datePickerAnoDocumento);
+            botao_confirmar                 = FindViewById<Button>(Resource.Id.botao_confirmar);
+            separar_palete_botao_sair       = FindViewById<Button>(Resource.Id.separar_palete_botao_sair);
+            editText_filial                 = FindViewById<EditText>(Resource.Id.editText_filial);
+                                    
+            botao_confirmar.Click           += Botao_confirmar_Click;
+            datePicker.DateChanged          += DatePicker_DateChanged;
             separar_palete_botao_sair.Click += Separar_palete_botao_sair_Click;
         }
 

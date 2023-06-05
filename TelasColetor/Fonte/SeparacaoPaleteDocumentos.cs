@@ -74,15 +74,10 @@ namespace TelasColetor.Fonte
         private void Adapter_ItemClick(object sender, int e)
         {
             int posicao = e;
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            //string mensagemTexto = "";
-
+            
             RecyclerAdapter adapter = recyclerView.GetAdapter() as RecyclerAdapter;
-            string data = adapter.items.documentosIndividual[posicao].Data;
-                       
+          
             List<Produtos> produtosDocumento = new List<Produtos>();
-
-            // pega os produtos daquele documento que foi clicado
             produtosDocumento = produtosDoDocumento.FindAll(a => a.NumeroDocumento == adapter.items.documentosIndividual[posicao].Numero);
             
             TransferenciaInformacoes.produtos = new List<Produtos>();

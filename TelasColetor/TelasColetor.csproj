@@ -61,6 +61,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fonte\Produtos.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\Dialog.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\DialogLeiaMenu.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionada.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaEscolherData.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaInformacoesDoProduto.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaLeiaItem.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaLeituraPorCaixa.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaListaDocumentos.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionaProdutosDoDocumento.cs" />
     <Compile Include="Fonte\SeparacaoPaleteDocumentos.cs" />
     <Compile Include="Fonte\SeparacaoPaletizada.cs" />
     <Compile Include="Fonte\SepararPalete.cs" />
@@ -76,6 +85,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
@@ -231,6 +241,70 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SepararPaletePaletePendente.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionada.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaEscolherData.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaListaDocumentos.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\emergency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionaProdutosDoDocumento.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionaProdutosDoDocumentoItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape_branco.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape_cabecalho_popup.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaMenuMaisOpcoes.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaLeituraPorCaixa.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaInformacoesDoProduto.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaInformacoesDoProdutoItemLote.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaLeiaItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaLeiaUmItemMenu.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
