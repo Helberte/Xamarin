@@ -27,6 +27,7 @@ namespace TelasColetor.Fonte
         public string Ean { get; set; }
         public string Dun { get; set; }
         public int Quantidade_a_registrar { get; set; }
-        public float Unidade { get; set; } 
+        public float Unidade { get; set; }
+        public string Status { get; set; }
     }
 }

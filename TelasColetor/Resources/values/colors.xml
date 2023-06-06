@@ -8,4 +8,5 @@
 	<color name="cor_tema">#0E4528</color>
 	<color name="cor_fonte">#404040</color>
 	<color name="cor_botao">#D6D6D6</color>
+	<color name="color_tint">#878787</color>
 </resources>

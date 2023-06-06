@@ -27,9 +27,14 @@
     <activity android:label="SeparacaoFracionada" android:name="crc648e78c68299137e84.SeparacaoFracionada" />
     <activity android:label="SeparacaoFracionadaEscolherData" android:name="crc648e78c68299137e84.SeparacaoFracionadaEscolherData" />
     <activity android:label="SeparacaoFracionadaInformacoesDoProduto" android:name="crc648e78c68299137e84.SeparacaoFracionadaInformacoesDoProduto" />
+    <activity android:label="SeparacaoFracionadaInformeEnderecoReferencia" android:name="crc648e78c68299137e84.SeparacaoFracionadaInformeEnderecoReferencia" />
+    <activity android:label="SeparacaoFracionadaLeiaAEtiqueta" android:name="crc648e78c68299137e84.SeparacaoFracionadaLeiaAEtiqueta" />
     <activity android:label="SeparacaoFracionadaLeiaItem" android:name="crc648e78c68299137e84.SeparacaoFracionadaLeiaItem" />
     <activity android:label="SeparacaoFracionadaLeituraPorCaixa" android:name="crc648e78c68299137e84.SeparacaoFracionadaLeituraPorCaixa" />
+    <activity android:label="SeparacaoFracionadaListaBaias" android:name="crc648e78c68299137e84.SeparacaoFracionadaListaBaias" />
     <activity android:label="SeparacaoFracionadaListaDocumentos" android:name="crc648e78c68299137e84.SeparacaoFracionadaListaDocumentos" />
+    <activity android:label="SeparacaoFracionadaListaProdutosSeparados" android:name="crc648e78c68299137e84.SeparacaoFracionadaListaProdutosSeparados" />
+    <activity android:label="SeparacaoFracionadaUltimaLeitura" android:name="crc648e78c68299137e84.SeparacaoFracionadaUltimaLeitura" />
     <activity android:label="SeparacaoFracionaProdutosDoDocumento" android:name="crc648e78c68299137e84.SeparacaoFracionaProdutosDoDocumento" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />

@@ -127,7 +127,7 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
                 View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.SeparacaoFracionadaInformacoesDoProdutoItemLote, parent, false);
 
                 RecyclerHolder vh = new RecyclerHolder(itemView, OnClick);
-                return vh; ;
+                return vh; 
             }
             public void OnClick(int position)
             {
@@ -142,7 +142,7 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
             
             public RecyclerHolder(View itemView, Action<int> listener) : base(itemView)
             {
-                separacao_fracionada_informacoes_do_produto_lote = itemView.FindViewById<TextView>(Resource.Id.separacao_fracionada_informacoes_do_produto_lote);
+                separacao_fracionada_informacoes_do_produto_lote     = itemView.FindViewById<TextView>(Resource.Id.separacao_fracionada_informacoes_do_produto_lote);
                 separacao_fracionada_informacoes_do_produto_validade = itemView.FindViewById<TextView>(Resource.Id.separacao_fracionada_informacoes_do_produto_validade);
                 
                 itemView.Click += (sender, e) => listener(base.AdapterPosition);

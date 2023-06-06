@@ -66,9 +66,14 @@
     <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionada.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaEscolherData.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaInformacoesDoProduto.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaInformeEnderecoReferencia.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaLeiaAEtiqueta.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaLeiaItem.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaLeituraPorCaixa.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaListaBaias.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaListaDocumentos.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaListaProdutosSeparados.cs" />
+    <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionadaUltimaLeitura.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\SeparacaoFracionaProdutosDoDocumento.cs" />
     <Compile Include="Fonte\SeparacaoPaleteDocumentos.cs" />
     <Compile Include="Fonte\SeparacaoPaletizada.cs" />
@@ -305,6 +310,39 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SeparacaoFracionadaLeiaUmItemMenu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaListaProdutosSeparados.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaListaProdutosSeparadosItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaUltimaLeitura.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaLeiaAEtiqueta.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaInformeEnderecoReferencia.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape_endereco_referencia.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SeparacaoFracionadaListaBaias.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

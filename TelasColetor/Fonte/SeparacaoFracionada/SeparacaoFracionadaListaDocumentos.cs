@@ -208,17 +208,18 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
 
             int qtdprodutos = random.Next(0, qtdLimiteProdutos);
 
-            // gera data vencimento aleatoria
-            string ano = (DateTime.Now.Year + 2).ToString();
-            string anoAleatorio = random.Next(DateTime.Now.Year, Convert.ToInt32(ano)).ToString();
-            string mes = random.Next(1, 12).ToString().PadLeft(2, '0');
-            string diaNoMes = DateTime.DaysInMonth(Convert.ToInt32(anoAleatorio), Convert.ToInt32(mes)).ToString().PadLeft(2, '0');
-            string dia = random.Next(DateTime.Now.Day, Convert.ToInt32(diaNoMes)).ToString().PadLeft(2, '0');
-
+           
             int quantidadeEmbalagem = random.Next(2, 50);
 
             for (int i = 0; i < qtdLimiteProdutos; i++)
             {
+                // gera data vencimento aleatoria
+                string ano = (DateTime.Now.Year + 2).ToString();
+                string anoAleatorio = random.Next(DateTime.Now.Year, Convert.ToInt32(ano)).ToString();
+                string mes = random.Next(1, 12).ToString().PadLeft(2, '0');
+                string diaNoMes = DateTime.DaysInMonth(Convert.ToInt32(anoAleatorio), Convert.ToInt32(mes)).ToString().PadLeft(2, '0');
+                string dia = random.Next(DateTime.Now.Day, Convert.ToInt32(diaNoMes)).ToString().PadLeft(2, '0');
+
                 Produtos produto = new Produtos()
                 {
                     Descricao              = GetNomesProdutos()[random.Next(0, GetNomesProdutos().Length - 1)].Trim(),

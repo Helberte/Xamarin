@@ -22,10 +22,10 @@ public final class R {
 		public static final int ttcIndex = 0x7f0301df;
 	}
 	public static final class color {
-		public static final int notification_action_color_filter = 0x7f050076;
-		public static final int notification_icon_bg_color = 0x7f050077;
-		public static final int ripple_material_light = 0x7f050081;
-		public static final int secondary_text_default_material_light = 0x7f050083;
+		public static final int notification_action_color_filter = 0x7f050077;
+		public static final int notification_icon_bg_color = 0x7f050078;
+		public static final int ripple_material_light = 0x7f050082;
+		public static final int secondary_text_default_material_light = 0x7f050084;
 	}
 	public static final class dimen {
 		public static final int compat_button_inset_horizontal_material = 0x7f060055;
@@ -92,18 +92,18 @@ public final class R {
 		public static final int right_side = 0x7f0800c8;
 		public static final int save_non_transition_alpha = 0x7f0800c9;
 		public static final int save_overlay_view = 0x7f0800ca;
-		public static final int tag_transition_group = 0x7f080151;
-		public static final int tag_unhandled_key_event_manager = 0x7f080152;
-		public static final int tag_unhandled_key_listeners = 0x7f080153;
-		public static final int text = 0x7f080155;
-		public static final int text2 = 0x7f080156;
-		public static final int time = 0x7f080174;
-		public static final int title = 0x7f080175;
-		public static final int transition_current_scene = 0x7f08017b;
-		public static final int transition_layout_save = 0x7f08017c;
-		public static final int transition_position = 0x7f08017d;
-		public static final int transition_scene_layoutid_cache = 0x7f08017e;
-		public static final int transition_transform = 0x7f08017f;
+		public static final int tag_transition_group = 0x7f08017b;
+		public static final int tag_unhandled_key_event_manager = 0x7f08017c;
+		public static final int tag_unhandled_key_listeners = 0x7f08017d;
+		public static final int text = 0x7f08017f;
+		public static final int text2 = 0x7f080180;
+		public static final int time = 0x7f08019e;
+		public static final int title = 0x7f08019f;
+		public static final int transition_current_scene = 0x7f0801a5;
+		public static final int transition_layout_save = 0x7f0801a6;
+		public static final int transition_position = 0x7f0801a7;
+		public static final int transition_scene_layoutid_cache = 0x7f0801a8;
+		public static final int transition_transform = 0x7f0801a9;
 	}
 	public static final class integer {
 		public static final int status_bar_notification_info_maxnum = 0x7f09000e;

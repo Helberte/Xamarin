@@ -24,6 +24,14 @@ public class DialogLeiaMenu
 		}
 	}
 
+	public DialogLeiaMenu (java.lang.String p0, java.lang.String p1)
+	{
+		super ();
+		if (getClass () == DialogLeiaMenu.class) {
+			mono.android.TypeManager.Activate ("TelasColetor.Fonte.SeparacaoFracionada.DialogLeiaMenu, TelasColetor", "System.String, mscorlib:System.String, mscorlib", this, new java.lang.Object[] { p0, p1 });
+		}
+	}
+
 
 	public android.view.View onCreateView (android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2)
 	{

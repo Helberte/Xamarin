@@ -26,10 +26,10 @@ public final class R {
 		public static final int browser_actions_divider_color = 0x7f050028;
 		public static final int browser_actions_text_color = 0x7f050029;
 		public static final int browser_actions_title_color = 0x7f05002a;
-		public static final int notification_action_color_filter = 0x7f050076;
-		public static final int notification_icon_bg_color = 0x7f050077;
-		public static final int ripple_material_light = 0x7f050081;
-		public static final int secondary_text_default_material_light = 0x7f050083;
+		public static final int notification_action_color_filter = 0x7f050077;
+		public static final int notification_icon_bg_color = 0x7f050078;
+		public static final int ripple_material_light = 0x7f050082;
+		public static final int secondary_text_default_material_light = 0x7f050084;
 	}
 	public static final class dimen {
 		public static final int browser_actions_context_menu_max_width = 0x7f060050;
@@ -132,18 +132,18 @@ public final class R {
 		public static final int notification_main_column_container = 0x7f0800b2;
 		public static final int right_icon = 0x7f0800c7;
 		public static final int right_side = 0x7f0800c8;
-		public static final int tag_accessibility_actions = 0x7f08014c;
-		public static final int tag_accessibility_clickable_spans = 0x7f08014d;
-		public static final int tag_accessibility_heading = 0x7f08014e;
-		public static final int tag_accessibility_pane_title = 0x7f08014f;
-		public static final int tag_screen_reader_focusable = 0x7f080150;
-		public static final int tag_transition_group = 0x7f080151;
-		public static final int tag_unhandled_key_event_manager = 0x7f080152;
-		public static final int tag_unhandled_key_listeners = 0x7f080153;
-		public static final int text = 0x7f080155;
-		public static final int text2 = 0x7f080156;
-		public static final int time = 0x7f080174;
-		public static final int title = 0x7f080175;
+		public static final int tag_accessibility_actions = 0x7f080176;
+		public static final int tag_accessibility_clickable_spans = 0x7f080177;
+		public static final int tag_accessibility_heading = 0x7f080178;
+		public static final int tag_accessibility_pane_title = 0x7f080179;
+		public static final int tag_screen_reader_focusable = 0x7f08017a;
+		public static final int tag_transition_group = 0x7f08017b;
+		public static final int tag_unhandled_key_event_manager = 0x7f08017c;
+		public static final int tag_unhandled_key_listeners = 0x7f08017d;
+		public static final int text = 0x7f08017f;
+		public static final int text2 = 0x7f080180;
+		public static final int time = 0x7f08019e;
+		public static final int title = 0x7f08019f;
 	}
 	public static final class integer {
 		public static final int status_bar_notification_info_maxnum = 0x7f09000e;

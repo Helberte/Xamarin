@@ -194,7 +194,7 @@ namespace TelasColetor.Fonte
                 // gera uma data aleatoria
 
                 int ano = DateTime.Now.Year; 
-                int mes = Convert.ToInt32(random.Next(4, 6).ToString().PadLeft(2, '0'));
+                int mes = Convert.ToInt32( DateTime.Now.ToString("MM"));
                 int diasNoMesEscolhido = DateTime.DaysInMonth(ano, mes);
                 int dia = Convert.ToInt32(random.Next(1, diasNoMesEscolhido).ToString().PadLeft(2, '0'));
 
@@ -224,16 +224,16 @@ namespace TelasColetor.Fonte
             System.Random random = new System.Random();
             
             int qtdprodutos = random.Next(0, qtdLimiteProdutos);
-
-            // gera data vencimento aleatoria
-            string ano = (DateTime.Now.Year + 2).ToString();
-            string anoAleatorio = random.Next(DateTime.Now.Year, Convert.ToInt32(ano)).ToString();
-            string mes = random.Next(1, 12).ToString().PadLeft(2,'0');
-            string diaNoMes = DateTime.DaysInMonth(Convert.ToInt32(anoAleatorio), Convert.ToInt32(mes)).ToString().PadLeft(2,'0');
-            string dia = random.Next(DateTime.Now.Day, Convert.ToInt32(diaNoMes)).ToString().PadLeft(2,'0');
-
-            for (int i = 0; i < qtdLimiteProdutos; i++)
+                        
+            for (int i = 0; i < qtdprodutos; i++)
             {
+                // gera data vencimento aleatoria
+                string ano = (DateTime.Now.Year + 2).ToString();
+                string anoAleatorio = random.Next(DateTime.Now.Year, Convert.ToInt32(ano)).ToString();
+                string mes = random.Next(1, 12).ToString().PadLeft(2, '0');
+                string diaNoMes = DateTime.DaysInMonth(Convert.ToInt32(anoAleatorio), Convert.ToInt32(mes)).ToString().PadLeft(2, '0');
+                string dia = random.Next(DateTime.Now.Day, Convert.ToInt32(diaNoMes)).ToString().PadLeft(2, '0');
+
                 Produtos produto = new Produtos()
                 {
                     Descricao = GetNomesProdutos()[random.Next(0, GetNomesProdutos().Length - 1)].Trim(),
@@ -241,7 +241,7 @@ namespace TelasColetor.Fonte
                     Etiqueta = random.Next(1, 2500000).ToString().PadLeft(8, '0'),
                     Gramas = random.Next(20, 500),
                     QuantidadeEmbalagem = random.Next(1, 50),
-                    Localizacao = random.Next(1, 99).ToString().PadLeft(2, '0') + random.Next(1, 50).ToString().PadLeft(2, '0') + random.Next(1, 7).ToString().PadLeft(2, '0') + random.Next(1, 3).ToString().PadLeft(4, '0'),
+                    Localizacao = random.Next(1, 50).ToString().PadLeft(2, '0') + random.Next(1, 50).ToString().PadLeft(2, '0') + random.Next(1, 7).ToString().PadLeft(2, '0') + random.Next(1, 3).ToString().PadLeft(4, '0'),
                     Codigo = random.Next(10000000, 20000000).ToString(),
                     Referencia = random.Next(10000, 99999).ToString() + random.Next(100000,999999),
                     Lote = "SL",

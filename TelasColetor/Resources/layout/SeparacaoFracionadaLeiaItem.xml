@@ -254,14 +254,13 @@
         </LinearLayout>        
     </LinearLayout>        
     <RelativeLayout
-        android:layout_above="@+id/layout_rodape"
         android:layout_below="@+id/linearLayout_etiqueta"        
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:id="@+id/separacao_fracionada_leia_item_relative_quantidades"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="120dp">
         <LinearLayout
             android:orientation="vertical"
             android:id="@+id/separacao_fracionada_leia_item_quantidade_separada"
@@ -419,6 +418,7 @@
             android:textColor="@color/cor_fonte"
             android:textSize="12dp"
             android:textStyle="bold"
+            android:id="@+id/separacao_fracionada_leia_item_botao_paletizar"
             android:layout_marginRight="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"/>  
