@@ -16,12 +16,16 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
     [Activity(Label = "SeparacaoFracionaProdutosDoDocumento")]
     public class SeparacaoFracionaProdutosDoDocumento : Activity
     {
+        #region Declaração de Variáveis
+
         List<Produtos> produtos;
         RecyclerView separacao_fraciona_produtos_do_documento_recyclerView_documentos;
         Button separacao_fraciona_produtos_do_documento_botao_opcoes;
 
         TextView separacao_fraciona_produtos_do_documento_filial;
         TextView separacao_fraciona_produtos_do_documento_data;
+
+        #endregion
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

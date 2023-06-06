@@ -130,7 +130,12 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
             }
         }
 
-        // simula os dados vindos do back-end
+
+        /// <summary>
+        /// Simula os dados dos documentos vindos do back-end
+        /// </summary>
+        /// <returns>Retorna um objeto Documentos contendo uma lista de DocumentoIndividual</returns> 
+        /// <remarks>Helberte Costa Arruda, 06/06/2023</remarks>
         public Documentos GetDocumentos()
         {
             // cria a lista de documentos em filiais aleatorias e em datas aleatorias

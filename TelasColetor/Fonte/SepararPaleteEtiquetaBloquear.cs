@@ -17,6 +17,8 @@ namespace TelasColetor.Fonte
     [Activity(Label = "SepararPaleteEtiquetaBloquear")]
     public class SepararPaleteEtiquetaBloquear : Activity
     {
+        #region Declaração de Variáveis
+
         Spinner spinner_motivo_bloqueio;
         Button bt_confirmar_bloqueio;
 
@@ -30,10 +32,12 @@ namespace TelasColetor.Fonte
         EditText separar_palete_etiqueta_bloquear_produto_lote;
         EditText separar_palete_etiqueta_bloquear_produto_validade;
         EditText separar_palete_etiqueta_bloquear_produto_endereco;
-        Button   separar_palete_bloquear_botao_voltar;
+        Button separar_palete_bloquear_botao_voltar;
 
         Produtos produto;
         int posicao = 0;
+
+        #endregion
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

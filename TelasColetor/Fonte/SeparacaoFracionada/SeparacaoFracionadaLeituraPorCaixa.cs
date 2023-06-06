@@ -41,7 +41,6 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
 
             separacao_fracionada_produtos_por_caixa_leia_endereco.TextChanged += Separacao_fracionada_produtos_por_caixa_leia_endereco_TextChanged;
 
-
             filial = Intent.GetStringExtra("filial");
             data   = Intent.GetStringExtra("data");
         }

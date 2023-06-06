@@ -15,6 +15,8 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
     [Activity(Label = "SeparacaoFracionadaUltimaLeitura")]
     public class SeparacaoFracionadaUltimaLeitura : Activity
     {
+        #region Declaração de Variáveis
+
         TextView separacao_fracionada_ultima_leitura_filial;
         EditText separacao_fracionada_ultima_leitura_descricao;
         EditText separacao_fracionada_ultima_leitura_codigo;
@@ -28,6 +30,8 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
         EditText separacao_fracionada_ultima_leitura_validade;
 
         Produtos produto;
+
+        #endregion
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

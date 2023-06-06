@@ -15,6 +15,8 @@ namespace TelasColetor.Fonte
     [Activity(Label = "SepararPaleteEtiqueta")]
     public class SepararPaleteEtiqueta : Activity
     {
+        #region Declaração de Variáveis
+
         TextView textView_produto_etiqueta;
         TextView textView_produto_descricao;
         TextView textView_filial;
@@ -25,9 +27,11 @@ namespace TelasColetor.Fonte
         EditText editText_produto_lote;
         EditText editText_produto_validade;
         EditText editText_produto_endereco;
-        Button   bt_bloquear;
-        Button   separar_palete_etiqueta_botao_voltar;
-        Produtos produtos; 
+        Button bt_bloquear;
+        Button separar_palete_etiqueta_botao_voltar;
+        Produtos produtos;
+
+        #endregion
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

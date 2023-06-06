@@ -16,6 +16,9 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
     [Activity(Label = "SeparacaoFracionadaLeiaItem")]
     public class SeparacaoFracionadaLeiaItem : Activity
     {
+
+        #region Declaração de variáveis
+
         TextView separacao_fracionada_leia_item_endereco;
         EditText separacao_fracionada_leia_item_edit_leia_item;
         EditText separacao_fracionada_leia_item_descricao;
@@ -29,13 +32,14 @@ namespace TelasColetor.Fonte.SeparacaoFracionada
         TextView separacao_fracionada_leia_item_caixas;
         TextView separacao_fracionada_leia_item_unidades_pendentes;
         TextView separacao_fracionada_leia_item_caixas_pendentes;
-        Button   separacao_fracionada_leia_item_botao_mais_opcoes;
-        Button   separacao_fracionada_leia_item_botao_paletizar;
+        Button separacao_fracionada_leia_item_botao_mais_opcoes;
+        Button separacao_fracionada_leia_item_botao_paletizar;
 
         Produtos produto;
 
         private string filial;
         private string data;
+        #endregion
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
