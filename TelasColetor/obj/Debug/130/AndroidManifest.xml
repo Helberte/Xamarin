@@ -36,6 +36,12 @@
     <activity android:label="SeparacaoFracionadaListaProdutosSeparados" android:name="crc648e78c68299137e84.SeparacaoFracionadaListaProdutosSeparados" />
     <activity android:label="SeparacaoFracionadaUltimaLeitura" android:name="crc648e78c68299137e84.SeparacaoFracionadaUltimaLeitura" />
     <activity android:label="SeparacaoFracionaProdutosDoDocumento" android:name="crc648e78c68299137e84.SeparacaoFracionaProdutosDoDocumento" />
+    <activity android:label="DescarregamentoCancelarListaBaias" android:name="crc64ccdd50d5031f7296.DescarregamentoCancelarListaBaias" />
+    <activity android:label="DescarregamentoFinalizarLeiaBaia" android:name="crc64ccdd50d5031f7296.DescarregamentoFinalizarLeiaBaia" />
+    <activity android:label="DescarregamentoLeiaDoca" android:name="crc64ccdd50d5031f7296.DescarregamentoLeiaDoca" />
+    <activity android:label="DescarregamentoListaDeBaias" android:name="crc64ccdd50d5031f7296.DescarregamentoListaDeBaias" />
+    <activity android:label="DescarregamentoListaPlacas" android:name="crc64ccdd50d5031f7296.DescarregamentoListaPlacas" />
+    <activity android:label="DescarregamentoMenuPrincipal" android:name="crc64ccdd50d5031f7296.DescarregamentoMenuPrincipal" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" />

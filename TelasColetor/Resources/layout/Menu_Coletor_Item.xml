@@ -24,7 +24,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:textSize="16dp"
-               android:textColor="#ff1c1c1c"
+                android:textColor="#ff1c1c1c"
                 android:textStyle="bold"
                 android:layout_marginTop="-3dp"
                 android:id="@+id/Menu_Coletor_Item_Descricao"

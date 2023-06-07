@@ -28,7 +28,7 @@ namespace hotel_pousadas.fonte
 
             SetContentView(Resource.Layout.lista_pessoas);
 
-            txtNomeUsuario = FindViewById<TextView>(Resource.Id.txtNomeUsuario);
+            txtNomeUsuario      = FindViewById<TextView>(Resource.Id.txtNomeUsuario);
             txtNomeUsuario.Text = Intent.GetStringExtra("nome");
     
             listView = FindViewById<ListView>(Resource.Id.listView1);

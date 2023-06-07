@@ -211,6 +211,13 @@ namespace TelasColetor
                                        Icone = TelasColetor.Resource.Drawable.icons8_empty_box_96_3,
                                        Form = ""
                                    });
+            menus.MenusUsuario.Add(
+                                   new Menu
+                                   {
+                                       Descricao = "Recebimento",
+                                       Icone = TelasColetor.Resource.Drawable.icons8_down_96,
+                                       Form = "TelasColetor.Fonte.Descarregamento.DescarregamentoMenuPrincipal"
+                                   });
             return menus;
         }
 

@@ -35,8 +35,8 @@ namespace hotel_pousadas.fonte
             // linca a tela ao codigo fonte
             SetContentView(Resource.Layout.movimentacoes);
 
-            calendario_mes = FindViewById<CalendarView>(Resource.Id.calendario_mes);
-            lista_movimentacoes = FindViewById<ListView>(Resource.Id.lista_reservas);
+            calendario_mes         = FindViewById<CalendarView>(Resource.Id.calendario_mes);
+            lista_movimentacoes    = FindViewById<ListView>(Resource.Id.lista_reservas);
             layout_bt_listar_todos = FindViewById<LinearLayout>(Resource.Id.layout_bt_listar_todos);
 
             calendario_mes.DateChange += Calendario_mes_DateChange;
@@ -70,9 +70,9 @@ namespace hotel_pousadas.fonte
 
             try
             {
-                var res = from a in objetosMovimentacoes where a.DiaReserva == dia select a;
+                var res = from a in objetosMovimentacoes where a.DiaReserva == dia orderby a.DiaReserva select a;
 
-                Movimentacoes retorno = objetosMovimentacoes.Find(a => a.DiaReserva == dia);
+                //Movimentacoes retorno = objetosMovimentacoes.Find(a => a.DiaReserva == dia);
 
                 if (res.Count() == 0)
                 {
@@ -101,6 +101,7 @@ namespace hotel_pousadas.fonte
                 MostrarMensagem("Erro inesperado, contate o suporte.", e.Message.ToString());
             }           
         }
+
         public void MostrarMensagem(string titulo, string texto)
         {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -130,7 +131,9 @@ namespace hotel_pousadas.fonte
                                                              });
                                 
                 lista_gambiarra.Add("RESERVA: " + objetosMovimentacoes[i - 1].NumeroReserva + " - CLIENTE: " + objetosMovimentacoes[i - 1].NomeCliente + " - DIA: " + objetosMovimentacoes[i - 1].DiaReserva);                                
+                
             }
+           
             ArrayAdapter<string> arrayAdapter = new ArrayAdapter<string>(this,
                                                         Android.Resource.Layout.SimpleListItem1
                                                         , lista_gambiarra);

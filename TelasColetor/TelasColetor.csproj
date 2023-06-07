@@ -60,6 +60,16 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fonte\Descarregamento\AdapterBaiaCustomizado.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoCancelarListaBaias.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoFinalizarLeiaBaia.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoLeiaDoca.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoListaDeBaias.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoListaPlacas.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoMenuPrincipal.cs" />
+    <Compile Include="Fonte\Descarregamento\DialogFragmentClass.cs" />
+    <Compile Include="Fonte\Descarregamento\ModelListaBaias.cs" />
+    <Compile Include="Fonte\Descarregamento\ViewHolder.cs" />
     <Compile Include="Fonte\Produtos.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\Dialog.cs" />
     <Compile Include="Fonte\SeparacaoFracionada\DialogLeiaMenu.cs" />
@@ -343,6 +353,69 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SeparacaoFracionadaListaBaias.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_down_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_in_transit_96_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoMenuPrincipal.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoLeiaDoca.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoListaPlacas.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoListaPlacasItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoListaDeBaias.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_done_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_in_transit_96_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoFinalizarLeiaBaia.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape_finalizar_descarregamento_leia_baia.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoFinalizaUsuarioLogin.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_cancel_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoCancelarListaBaias.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoCancelarListaBaiasItem.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
