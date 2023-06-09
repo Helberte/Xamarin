@@ -16,6 +16,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="MainClassApplication" android:name="crc645d24e28d00d9eb3f.MainClassApplication" />
     <activity android:label="SeparacaoPaleteDocumentos" android:name="crc64b1a4cca7acb3ab72.SeparacaoPaleteDocumentos" />
     <activity android:label="SeparacaoPaletizada" android:name="crc64b1a4cca7acb3ab72.SeparacaoPaletizada" />
     <activity android:label="SepararPalete" android:name="crc64b1a4cca7acb3ab72.SepararPalete" />
@@ -36,7 +37,10 @@
     <activity android:label="SeparacaoFracionadaListaProdutosSeparados" android:name="crc648e78c68299137e84.SeparacaoFracionadaListaProdutosSeparados" />
     <activity android:label="SeparacaoFracionadaUltimaLeitura" android:name="crc648e78c68299137e84.SeparacaoFracionadaUltimaLeitura" />
     <activity android:label="SeparacaoFracionaProdutosDoDocumento" android:name="crc648e78c68299137e84.SeparacaoFracionaProdutosDoDocumento" />
+    <activity android:label="DescarregamentoCancelarConfirmaInformacoes" android:name="crc64ccdd50d5031f7296.DescarregamentoCancelarConfirmaInformacoes" />
     <activity android:label="DescarregamentoCancelarListaBaias" android:name="crc64ccdd50d5031f7296.DescarregamentoCancelarListaBaias" />
+    <activity android:label="DescarregamentoConsultarProdutoLeiaProduto" android:name="crc64ccdd50d5031f7296.DescarregamentoConsultarProdutoLeiaProduto" />
+    <activity android:label="DescarregamentoConsultarProdutoListaBaias" android:name="crc64ccdd50d5031f7296.DescarregamentoConsultarProdutoListaBaias" />
     <activity android:label="DescarregamentoFinalizarLeiaBaia" android:name="crc64ccdd50d5031f7296.DescarregamentoFinalizarLeiaBaia" />
     <activity android:label="DescarregamentoLeiaDoca" android:name="crc64ccdd50d5031f7296.DescarregamentoLeiaDoca" />
     <activity android:label="DescarregamentoListaDeBaias" android:name="crc64ccdd50d5031f7296.DescarregamentoListaDeBaias" />

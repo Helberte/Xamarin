@@ -42,8 +42,8 @@ namespace hotel_pousadas.fonte
             calendario_mes.DateChange += Calendario_mes_DateChange;
             layout_bt_listar_todos.Click += Layout_bt_listar_todos_Click;
 
-            list = new List<string>();
-            lista_gambiarra = new List<string>();
+            list                 = new List<string>();
+            lista_gambiarra      = new List<string>();
             objetosMovimentacoes = new List<Movimentacoes>();
 
             DefineReservas();
@@ -140,12 +140,10 @@ namespace hotel_pousadas.fonte
             lista_movimentacoes.Adapter = arrayAdapter;
         }
 
-        private class Movimentacoes {
-             
+        private class Movimentacoes {             
             public int DiaReserva { get; set; }
             public int NumeroReserva { get; set; }
             public string NomeCliente { get; set; }
         }
-
     }
 }

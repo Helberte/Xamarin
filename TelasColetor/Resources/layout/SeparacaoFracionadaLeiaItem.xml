@@ -47,7 +47,7 @@
         android:layout_below="@+id/layout_info_documentos"
         android:id="@+id/separacao_fracionada_leia_item_swuit"
         android:layout_width="match_parent"
-        android:gravity="end"
+        android:gravity="end"        
         android:paddingRight="5dp"
         android:layout_height="wrap_content">
         <Switch
@@ -81,7 +81,7 @@
         <LinearLayout        
             android:orientation="horizontal"
             android:gravity="center"  
-            android:background="@android:color/transparent"
+            android:background="@android:color/transparent"            
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView

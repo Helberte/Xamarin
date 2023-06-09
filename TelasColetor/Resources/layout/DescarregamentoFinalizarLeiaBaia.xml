@@ -156,7 +156,7 @@
             android:text="@string/botao_sair"
             android:textColor="@color/cor_fonte"
             android:textSize="12dp"
-            android:id="@+id/separacao_fracionada_lista_produtos_separados_botao_voltar"
+            android:id="@+id/descarregamento_finaliza_leia_baia_botao_sair"
             android:textStyle="bold"
             android:layout_marginRight="5dp"
             android:layout_width="100dp"

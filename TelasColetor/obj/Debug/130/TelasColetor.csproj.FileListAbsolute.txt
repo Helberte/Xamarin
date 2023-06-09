@@ -457,3 +457,16 @@ D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296\AdapterBaiaCustomizado.java
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296\ViewHolder.java
 D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\descarregamentocancelarlistabaiasitem.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\descarregamentocancelarconfirmainformacoes.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\shape_descricao_cancela_descarga.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296\DescarregamentoCancelarConfirmaInformacoes.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\icones_mensagem_sucesso.png
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\drawable\icons8_search_in_list_96.png
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\descarregamentoconsultarprodutolistabaias.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\descarregamentoconsultarprodutolistabaiasitem.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296\DescarregamentoConsultarProdutoListaBaias.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296\DescarregamentoConsultarProdutoListaBaias_ListViewAdapter.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296\DescarregamentoConsultarProdutoListaBaias_ViewHolder.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\res\layout\descarregamentoconsultarprodutoleiaproduto.xml
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc64ccdd50d5031f7296\DescarregamentoConsultarProdutoLeiaProduto.java
+D:\Helberte\Xamarin\TelasColetor\obj\Debug\130\android\src\crc645d24e28d00d9eb3f\MainClassApplication.java

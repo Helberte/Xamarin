@@ -61,7 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fonte\Descarregamento\AdapterBaiaCustomizado.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoCancelarConfirmaInformacoes.cs" />
     <Compile Include="Fonte\Descarregamento\DescarregamentoCancelarListaBaias.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoConsultarProdutoLeiaProduto.cs" />
+    <Compile Include="Fonte\Descarregamento\DescarregamentoConsultarProdutoListaBaias.cs" />
     <Compile Include="Fonte\Descarregamento\DescarregamentoFinalizarLeiaBaia.cs" />
     <Compile Include="Fonte\Descarregamento\DescarregamentoLeiaDoca.cs" />
     <Compile Include="Fonte\Descarregamento\DescarregamentoListaDeBaias.cs" />
@@ -95,6 +98,7 @@
     <Compile Include="Fonte\SepararPaleteProdutosDoDocumento.cs" />
     <Compile Include="Fonte\TransferenciaInformacoes.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainClassApplication.cs" />
     <Compile Include="Mensagens.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -416,6 +420,35 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\DescarregamentoCancelarListaBaiasItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoCancelarConfirmaInformacoes.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\shape_descricao_cancela_descarga.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icones_Mensagem_Sucesso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8_search_in_list_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoConsultarProdutoListaBaias.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoConsultarProdutoListaBaiasItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DescarregamentoConsultarProdutoLeiaProduto.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

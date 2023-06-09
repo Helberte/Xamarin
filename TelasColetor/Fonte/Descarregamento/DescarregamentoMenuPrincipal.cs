@@ -116,7 +116,11 @@ namespace TelasColetor.Fonte.Descarregamento
 
                 new Menu() { Icone = Resource.Drawable.icons8_cancel_96,
                              Nome = "Cancelar Descarregamento",
-                             Rota = "TelasColetor.Fonte.Descarregamento.DescarregamentoCancelarListaBaias"}
+                             Rota = "TelasColetor.Fonte.Descarregamento.DescarregamentoCancelarListaBaias"},
+
+                new Menu() { Icone = Resource.Drawable.icons8_search_in_list_96,
+                            Nome = "Consulta Produto",
+                            Rota = "TelasColetor.Fonte.Descarregamento.DescarregamentoConsultarProdutoListaBaias"}
             };
 
             return list;

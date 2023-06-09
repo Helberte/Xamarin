@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,8 @@ namespace TelasColetor.Fonte.Descarregamento
     [Activity(Label = "DescarregamentoCancelarListaBaias")]
     public class DescarregamentoCancelarListaBaias : Activity
     {
-
         ListView descarregamento_cancelar_lista_de_baias_listview_baias;
+        Button   descarregamento_cancelar_lista_de_baias_botao_voltar;
 
         /// <summary>
         /// Ponto de entrada da activity, aqui, é criado um adapter personalizado para preencher a lista, 
@@ -31,6 +32,7 @@ namespace TelasColetor.Fonte.Descarregamento
             SetContentView(Resource.Layout.DescarregamentoCancelarListaBaias);
 
             descarregamento_cancelar_lista_de_baias_listview_baias = FindViewById<ListView>(Resource.Id.descarregamento_cancelar_lista_de_baias_listview_baias);
+            descarregamento_cancelar_lista_de_baias_botao_voltar   = FindViewById<Button>(Resource.Id.descarregamento_cancelar_lista_de_baias_botao_voltar);
 
             Random random = new Random();
             List<ModelListaBaias> baias = new List<ModelListaBaias>();
@@ -43,14 +45,22 @@ namespace TelasColetor.Fonte.Descarregamento
             baias = baias.OrderBy(a => a.NumeroBaia).ToList();
             baias = baias.Distinct().ToList();
 
-            descarregamento_cancelar_lista_de_baias_listview_baias.Adapter = new AdapterBaiaCustomizado(baias);
-            descarregamento_cancelar_lista_de_baias_listview_baias.Click += Descarregamento_cancelar_lista_de_baias_listview_baias_Click;
+            descarregamento_cancelar_lista_de_baias_listview_baias.ItemClick += Descarregamento_cancelar_lista_de_baias_listview_baias_ItemClick;
+            descarregamento_cancelar_lista_de_baias_botao_voltar.Click += (sender, e) => this.Finish();
 
+            descarregamento_cancelar_lista_de_baias_listview_baias.Adapter = new AdapterBaiaCustomizado(baias);            
         }
 
-        private void Descarregamento_cancelar_lista_de_baias_listview_baias_Click(object sender, EventArgs e)
+        private void Descarregamento_cancelar_lista_de_baias_listview_baias_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
+            int posicao = e.Position;
 
+            AdapterBaiaCustomizado baias = descarregamento_cancelar_lista_de_baias_listview_baias.Adapter as AdapterBaiaCustomizado;
+                       
+            Intent intent = new Intent(this, typeof(DescarregamentoCancelarConfirmaInformacoes));
+            intent.PutExtra("baia", baias.modelListaBaias[posicao].NumeroBaia.ToString().PadLeft(2,'0'));
+
+            StartActivity(intent);
         }
     }
 }

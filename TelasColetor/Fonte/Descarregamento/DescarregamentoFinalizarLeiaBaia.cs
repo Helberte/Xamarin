@@ -12,11 +12,12 @@ using System.Text;
 namespace TelasColetor.Fonte.Descarregamento
 {
     [Activity(Label = "DescarregamentoFinalizarLeiaBaia")]
-    public class DescarregamentoFinalizarLeiaBaia : Activity
+    public class DescarregamentoFinalizarLeiaBaia : MainClassApplication
     {
         LinearLayout descarregamento_finaliza_leia_baia_informacoes_carga;
         EditText     descarregamento_finaliza_leia_baia_leia_uma_baia;
         Button       descarregamento_finaliza_leia_baia_botao_confirmar;
+        Button       descarregamento_finaliza_leia_baia_botao_sair;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,10 +29,18 @@ namespace TelasColetor.Fonte.Descarregamento
             descarregamento_finaliza_leia_baia_informacoes_carga = FindViewById<LinearLayout>(Resource.Id.descarregamento_finaliza_leia_baia_informacoes_carga);
             descarregamento_finaliza_leia_baia_leia_uma_baia     = FindViewById<EditText>(Resource.Id.descarregamento_finaliza_leia_baia_leia_uma_baia);
             descarregamento_finaliza_leia_baia_botao_confirmar   = FindViewById<Button>(Resource.Id.descarregamento_finaliza_leia_baia_botao_confirmar);
+            descarregamento_finaliza_leia_baia_botao_sair        = FindViewById<Button>(Resource.Id.descarregamento_finaliza_leia_baia_botao_sair);
 
-            descarregamento_finaliza_leia_baia_informacoes_carga.Visibility = ViewStates.Gone;
+            descarregamento_finaliza_leia_baia_informacoes_carga.Visibility  = ViewStates.Gone;
             descarregamento_finaliza_leia_baia_botao_confirmar.Click        += Descarregamento_finaliza_leia_baia_botao_confirmar_Click;
             descarregamento_finaliza_leia_baia_leia_uma_baia.TextChanged    += Descarregamento_finaliza_leia_baia_leia_uma_baia_TextChanged;
+
+            descarregamento_finaliza_leia_baia_botao_sair.Click += Descarregamento_finaliza_leia_baia_botao_sair_Click; ;
+        }
+
+        private void Descarregamento_finaliza_leia_baia_botao_sair_Click(object sender, EventArgs e)
+        {      
+            MensagemSairDoAplicativo();
         }
 
         private void Descarregamento_finaliza_leia_baia_leia_uma_baia_TextChanged(object sender, Android.Text.TextChangedEventArgs e)

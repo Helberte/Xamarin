@@ -2,7 +2,7 @@ package crc64ccdd50d5031f7296;
 
 
 public class DescarregamentoFinalizarLeiaBaia
-	extends android.app.Activity
+	extends crc645d24e28d00d9eb3f.MainClassApplication
 	implements
 		mono.android.IGCUserPeer
 {

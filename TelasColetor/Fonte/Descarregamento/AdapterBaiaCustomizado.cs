@@ -13,7 +13,7 @@ namespace TelasColetor.Fonte.Descarregamento
 {
     public class AdapterBaiaCustomizado : BaseAdapter<ModelListaBaias>
     {
-        List<ModelListaBaias> modelListaBaias;
+        public List<ModelListaBaias> modelListaBaias;
 
         public AdapterBaiaCustomizado(List<ModelListaBaias> modelListaBaias)
         {
@@ -43,21 +43,13 @@ namespace TelasColetor.Fonte.Descarregamento
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
+            var item = modelListaBaias[position];
             var view = convertView;
 
-            if (view == null)
-            {
-                view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.DescarregamentoCancelarListaBaiasItem, parent, false);
-                TextView textview_baia   = view.FindViewById<TextView>(Resource.Id.textview_baia);
-                ImageView imageView_baia = view.FindViewById<ImageView>(Resource.Id.imageView_baias);
+            view ??= LayoutInflater.From(parent.Context).Inflate(Resource.Layout.DescarregamentoCancelarListaBaiasItem, parent, false);
 
-                view.Tag = new ViewHolder() { Textview_baia = textview_baia, ImagemBaia = imageView_baia };
-            }
-
-            var holder = (ViewHolder)view.Tag;
-
-            holder.Textview_baia.Text = modelListaBaias[position].NumeroBaia.ToString();
-            holder.ImagemBaia.SetImageResource(modelListaBaias[position].ImagemBaia);
+            view.FindViewById<TextView>(Resource.Id.textview_baia).Text = item.NumeroBaia.ToString();
+            view.FindViewById<ImageView>(Resource.Id.imageView_baias).SetImageResource(item.ImagemBaia);
 
             return view;
         }
